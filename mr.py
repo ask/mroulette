@@ -1,7 +1,10 @@
+from __future__ import print_function
+
+import os
+import sys
 import random
 
-from collections import defaultdict, namedtuple
-from functools import partial
+from collections import Counter, defaultdict, namedtuple
 
 product = namedtuple('product', ('brand', 'name', 'tags'))
 tags = lambda *x: x
@@ -70,28 +73,29 @@ INST = {
     product('Analogue Drums', 'Pizazz', tags('drums', 'kontakt', 'acoustic')),
     product('Analogue Drums', 'Smoker', tags('drums', 'kontakt', 'acoustic')),
     product('Apple', 'Ultrabeat', tags(
-        'logic', 'drums', 'synth', 'logic:inst')),
+        'logic', 'drums', 'synth', 'logic:inst',
+    )),
     product('Apple', 'Sculpture', tags(
         'logic', 'physmod', 'synth', 'logic:inst',
     )),
     product('Apple', 'EVOC 20 PS', tags(
         'logic', 'vocoder', 'digital', 'logic:inst',
-    ))
+    )),
     product('apple', 'EFM1', tags(
         'logic', 'FM', 'digital', 'synth', 'logic:inst',
-    ))
+    )),
     product('apple', 'ES M', tags(
         'logic', 'subtractive', 'mono', 'digital', 'synth', 'logic:inst',
-    ))
+    )),
     product('apple', 'ES P', tags(
         'logic', 'subtractive', 'digital', 'synth', 'logic:inst',
-    ))
+    )),
     product('apple', 'ES1', tags(
         'logic', 'subtractive', 'digital', 'synth', 'logic:inst',
-    ))
+    )),
     product('apple', 'ES2', tags(
         'logic', 'subtractive', 'digital', 'synth', 'logic:inst',
-    ))
+    )),
     product('Arturia', 'Analog Lab', tags('analog')),
     product('Arturia', 'Analog Labratory', tags('analog')),
     product('Arturia', 'ARP 2600 V2', tags('analog', 'subtractive')),
@@ -154,6 +158,15 @@ INST = {
     )),
     product('Pluginboutique', 'VirtualCZ', tags(
         'synth', 'phase modulation', 'digital',
+    )),
+    product('Prodyon', 'Shortnoise', tags(
+        'synth', 'sampled', 'kontakt',
+    )),
+    product('Prodyon', 'Shortnoise II', tags(
+        'synth', 'sampled', 'kontakt',
+    )),
+    product('Prodyon', 'Elektrono', tags(
+        'synth', 'sampled', 'kontakt',
     )),
     product('ReFX', 'QuadraSID', tags('synth', 'sid', 'digital', 'retro')),
     product('Roland', 'SH-2', tags('mono', 'analog', 'subtractive')),
@@ -279,7 +292,7 @@ FX = {
     product('Flux', 'Solera', tags('dynamics')),
     product('Flux', 'StereoToolV3', tags('imaging', 'free')),
     product('Flux', 'Syrah', tags('dynamics')),
-    product('FXpansion', 'Bloom', tags('delay', 'reverb', 'special')),
+    product('FXpansion', 'Bloom', tags('delay', 'special')),
     product('FXpansion', 'Maul', tags('distortion', 'special')),
     product('Goodhertz', 'Lossy', tags('special')),
     product('Illformed', 'Glitch2', tags('special', 'FSU')),
@@ -442,13 +455,72 @@ FX.update(MFX)
 
 fx_by_tag = defaultdict(set)
 inst_by_tag = defaultdict(set)
+fx_by_brand = defaultdict(set)
+inst_by_brand = defaultdict(set)
 
 for f in FX:
+    fx_by_brand[f.brand].add(f)
     for tag in f.tags:
         fx_by_tag[tag].add(f)
 for i in INST:
+    inst_by_brand[i.brand].add(i)
     for tag in i.tags:
         inst_by_tag[tag].add(f)
+
+
+class Collection(object):
+
+    def __init__(self, db):
+        self.db = db
+        self.by_tag = defaultdict(set)
+        self.by_brand = defaultdict(set)
+        self._rand_by_tag = None
+        self._rand_by_brand = None
+        self._most_common = None
+        self.update_indices()
+
+    def __iter__(self):
+        return iter(self.db)
+
+    def update_indices(self):
+        self.by_tag.clear()
+        self.by_brand.clear()
+
+        for product in self.db:
+            self.by_brand[product.brand].add(product)
+            for tag in f.tags:
+                self.by_tag[tag].add(product)
+        self._rand_by_tag = defaultdict(list)
+        self._rand_by_brand = self._prepare_randomness()
+        for brand, products in self._rand_by_brand.iteritems():
+            for product in products:
+                for tag in product.tags:
+                    self._rand_by_tag[tag].append(product)
+
+    def _prepare_randomness(self):
+        result = defaultdict(list)
+        brands = self._most_common = Counter(p.brand for p in self)
+        most_total = None
+        for i, (brand, total) in enumerate(brands.most_common()):
+            if i:
+                diff = most_total - total
+                products = list(self.by_brand[brand])
+                result[brand].extend(products)
+                result[brand].extend(
+                    products[j % total]
+                    for j in range(min(diff, max(total, 8)))
+                )
+                random.shuffle(result[brand])
+            else:
+                most_total = total
+        return result
+
+    def random_by_tag(self, tag):
+        return random.choice(self._rand_by_tag[tag])
+
+
+effects = Collection(FX)
+instruments = Collection(INST)
 
 
 def find_info(p, key, sep=':'):
@@ -462,30 +534,30 @@ def hp(p, cat=''):
     return '{0.brand} {0.name} {cat}'.format(p, cat=cat)
 
 
-def get_random(bag, tag):
-    return random.choice(list(bag[tag]))
-
-random_fx_by_tag = partial(get_random, fx_by_tag)
-random_inst_by_tag = partial(get_random, inst_by_tag)
-
-
 def select():
     seen = set()
 
-    def retry(fun, *args):
+    def uniq_fx_by_tag(tag):
         while 1:
-            r = fun(*args)
+            r = effects.random_by_tag(tag)
             if r not in seen:
+                seen.add(r)
                 return r
 
     return FMT.format(
         inst=hp(random.choice(list(INST))),
-        reverb=hp(retry(random_fx_by_tag, 'reverb')),
-        delay=hp(retry(random_fx_by_tag, 'delay')),
-        special=hp(retry(random_fx_by_tag, 'special')),
-        character=hp(retry(random_fx_by_tag, 'character')),
-        eq=hp(retry(random_fx_by_tag, 'eq')),
-        dynamics=hp(retry(random_fx_by_tag, 'dynamics')),
+        reverb=hp(uniq_fx_by_tag('reverb')),
+        delay=hp(uniq_fx_by_tag('delay')),
+        special=hp(uniq_fx_by_tag('special')),
+        character=hp(uniq_fx_by_tag('character')),
+        eq=hp(uniq_fx_by_tag('eq')),
+        dynamics=hp(uniq_fx_by_tag('dynamics')),
     )
 
-print(select())
+
+def main(argv=sys.argv, env=os.environ):
+    print(select())
+
+
+if __name__ == '__main__':
+    main()
