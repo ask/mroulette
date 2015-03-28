@@ -2,6 +2,7 @@
 *.pyc
 *$py.class
 *~
+.sw[pon]
 .*.sw[pon]
 dist/
 *.egg-info
@@ -24,4 +25,7 @@ Documentation/
 celery/tests/cover/
 .ve*
 cover/
-
+Effects/
+Instruments/
+fxbytag/
+insbytag/

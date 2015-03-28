@@ -1,0 +1,9 @@
+include LICENSE
+include README.rst
+include MANIFEST.in
+include setup.cfg
+include setup.py
+recursive-include mroulette *.py
+recursive-include requirements *.txt
+prune *.pyc
+prune *.sw*
