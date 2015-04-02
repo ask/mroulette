@@ -429,6 +429,9 @@ FX = {
     product('Kush Audio', 'Clariphonic', aufx('Kush', 'clar'), tags(
         t.EQ, 'exciter'
     )),
+    product('Kush Audio', 'Clariphonic mkii', aufx('Kush', 'Clr2'), tags(
+        t.EQ, 'exciter' 'midside',
+    )),
     product('Kush Audio', 'Electra DSP', aufx('Kush', 'Elec'), tags(
         t.EQ, 'analog',
     )),
@@ -486,6 +489,11 @@ FX = {
     # -Little Endian-
     product('Little Endian', 'SpectrumWorx', aufx('LE00', 'SW00'), tags(
         t.CREATIVE, 'spectral', 'special', 'sidechain',
+    )),
+
+    # -Mathew Lane-
+    product('Mathew Lane', 'DrMS v4', aufx('MaLa', 'DMS4'), tags(
+        t.IMAGE, 'midside',
     )),
 
     # -Max for Cats-

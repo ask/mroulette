@@ -421,7 +421,7 @@ INST = {
     product('Native Instruments', 'FM8', aumu('-NI-', 'Nif8'), tags(
         'FM', 'digital', 'retro',
     )),
-    product('Native Instruments', 'Kontakt 5', kontakt, tags(
+    product('Native Instruments', 'Kontakt 5', aumu('-NI-', 'NiO5'), tags(
         'sampler',
     )),
     product('Native Instruments', 'Massive', aumu('-NI-', 'NiMa'), tags(
@@ -779,6 +779,9 @@ INST = {
     # -Waldorf-
     product('Waldorf', 'Attack', aumu('3E00', '3EDr'), tags(
         'drums', 'synth',
+    )),
+    product('Waldorf', 'Largo', aumu('3E00', '3E80'), tags(
+        'synth', 'wavetable', 'digital',
     )),
     product('Waldorf', 'PPG Wave 2.V', aumu('3E00', '2900'), tags(
         'synth', 'wavetable', 'digital',
