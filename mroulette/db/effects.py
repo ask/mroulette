@@ -16,10 +16,10 @@ FX = {
         t.COMP, 'dynamics', 'character',
     )),
     product('Abbey Road', 'EMI TG12412', aufx('AbRd', 'TGeq'), tags(
-        t.EQ, 'character',
+        t.EQCR, 'eq', 'character',
     )),
     product('Abbey Road', 'EMI TG12414', aufx('AbRd', 'TGfi'), tags(
-        t.EQ, 'character', 'filter',
+        t.EQCR, 'eq', 'character', 'filter',
     )),
     product('Abbey Road', 'EMI TG12413 1969', aufx('AbRd', 'TG69'), tags(
         t.DYN, 'compressor', 'limiter',
@@ -164,6 +164,10 @@ FX = {
         t.CREATIVE, 'reverb', 'character', 'ringmod',
     )),
 
+    # -Boz Digital Labs-
+    product('Boz Digital Labs', 'Bark of Dog', aufx('BDLa', 'BODg'), tags(
+        t.EQEX, 'bass', 'voice of god', 'free',
+    )),
 
     # -Celemony-
     product('Celemony', 'Melodyne Editor', aumf('CLMY', 'MPLG'), tags(
@@ -180,7 +184,7 @@ FX = {
         t.DYN, 'eq', 'desser', 'vocal',
     )),
     product('DMG Audio', 'PitchFunk', aumf('DMGa', 'PiFu'), tags(
-        t.DELAY, 'granular', 'special',
+        t.GRAIN, 'delay', 'special',
     )),
 
     # -Eiosis-
@@ -238,7 +242,7 @@ FX = {
         t.FLUX, 'dynamics', 'limiter', 'mix', 'mastering',
     )),
     product('Flux', 'Epure', aufx('Fspd', 'Ftst'), tags(
-        t.FLUX, 'eq', 'mix', 'mastering',
+        t.EQ, 'eq', 'mix', 'mastering',
     )),
     product('Flux', 'Pure Compressor', aufx('Fspd', 'fxPc'), tags(
         t.FLUX, 'dynamics', 'compressor', 'mix', 'sidechain',
@@ -427,13 +431,13 @@ FX = {
 
     # -Kush Audio-
     product('Kush Audio', 'Clariphonic', aufx('Kush', 'clar'), tags(
-        t.EQ, 'exciter'
+        t.EQEX, 'eq', 'exciter',
     )),
     product('Kush Audio', 'Clariphonic mkii', aufx('Kush', 'Clr2'), tags(
-        t.EQ, 'exciter' 'midside',
+        t.EQEX, 'eq', 'exciter' 'midside',
     )),
     product('Kush Audio', 'Electra DSP', aufx('Kush', 'Elec'), tags(
-        t.EQ, 'analog',
+        t.EQCR, 'eq', 'character', 'analog',
     )),
     product('Kush Audio', 'Pusher', aufx('Kush', 'Push'), tags(
         t.DIST, 'character', 'saturation',
@@ -505,14 +509,26 @@ FX = {
     )),
 
     # -McDSP-
+    product('McDSP', '4040 Retro Limiter', aufx('McDP', 'McDP'), tags(
+        t.DYN, 'dynamics', 'limiter', 'character',
+    )),
     product('McDSP', 'Analog Channel AC101', aufx('McDP', 'AC01'), tags(
-        t.DIST, 'character',
+        t.SAT, 'character',
     )),
     product('McDSP', 'Analog Channel AC202', aufx('McDP', 'AC02'), tags(
-        t.DIST, 'character', 'tape',
+        t.SAT, 'character', 'tape',
     )),
     product('McDSP', 'FutzBox', aufx('McDP', 'Futz'), tags(
         t.DIST, 'special', 'eq', 'character',
+    )),
+    product('McDSP', 'MC2000 MC202', aufx('McDP', 'MC02'), tags(
+        t.DYN, 'multiband', 'compressor',
+    )),
+    product('McDSP', 'MC2000 MC303', aufx('McDP', 'MC03'), tags(
+        t.DYN, 'multiband', 'compressor',
+    )),
+    product('McDSP', 'MC2000 MC404', aufx('McDP', 'MC04'), tags(
+        t.DYN, 'multiband', 'compressor',
     )),
 
     # -MeldaProduction-
@@ -520,6 +536,10 @@ FX = {
         'MeldaProduction', 'MMultibandGranular', aumf('Meld', 'MMGr'),
         tags(t.GRAIN, 'special', 'sidechain', 'multiband'),
     ),
+    product(
+        'MeldaProduction', 'MXXX', aumf('Meld', 'MXXX'), tags(
+        t.GRAIN, 'special', 'combiner',
+    )),
 
     # -Metric Halo-
     product('Metric Halo', 'Dirty Delay', aufx('MHL ', 'DELY'), tags(
@@ -556,7 +576,7 @@ FX = {
     ),
     product(
         'Native Instruments', 'Transient Master',
-        aufx('-NI-', 'Ni$5'), tags(t.DYN, 'transient shaper')
+        aufx('-NI-', 'Ni$5'), tags(t.TRANS, 'dynamics', 'transient shaper')
     ),
     product('Native Instruments', 'Replika', aufx('-NI-', 'Ni$B'), tags(
         t.DELAY, 'reverb'
@@ -572,6 +592,9 @@ FX = {
     )),
 
     # -Ohm Force-
+    product('Ohm Force', 'Hematohm', aumf('OmFo', 'OHmt'), tags(
+        t.MOD, 'freqshift', 'ringmod',
+    )),
     product('Ohm Force', 'Ohmicide', aumf('OmFo', 'Opd2'), tags(
         t.DIST, 'character', 'multiband',
     )),
@@ -592,6 +615,9 @@ FX = {
     )),
 
     # -Sinevibes-
+    product('Sinevibes', 'Atom', aufx('SNSH', 'atom'), tags(
+        t.FILT, 'free',
+    )),
     product('Sinevibes', 'Zap', aufx('SNSH', 'zzap'), tags(
         t.MOD, 'free',
     )),
@@ -604,13 +630,13 @@ FX = {
         t.COMP, 'dynamics', 'character',
     )),
     product('Slate Digital', 'FG-N (VMR)', aufx('SlDg', 'VMXR'), tags(
-        t.EQ, 'character',
+        t.EQCR, 'eq', 'character',
     )),
     product('Slate Digital', 'FG-S (VMR)', aufx('SlDg', 'VMXR'), tags(
-        t.EQ, 'character',
+        t.EQCR, 'eq', 'character',
     )),
     product('Slate Digital', 'Revival (VMR)', aufx('SlDg', 'VMXR'), tags(
-        t.EQ, 'exciter', 'character', 'free',
+        t.EQEX, 'eq', 'exciter', 'character', 'free',
     )),
     product('Slate Digital', 'FG-Grey (VBC)', aufx('SlDg', 'VBCg'), tags(
         t.COMP, 'dynamics', 'mix',
@@ -634,40 +660,40 @@ FX = {
     #product('Smartelectronix', 'Ambience', aufx('MagJ', '07C0BCD2'), tags(
     #    t.VERB, 'free',
     #)),
-    product('Smartelectronix', 'Bouncy', aufx('BrDJ', 'BNCY'), tags(
-        t.DELAY, 'special', 'free', 'zipper-noise',
-    )),
-    product('Smartelectronix', 'Buffer Override', aumf('DFX!', 'buff'), tags(
-        t.CREATIVE, 'special', 'free', 'FSU',
-    )),
-    product('Smartelectronix', 'Geometer', aumf('DFX!', 'DFgr'), tags(
-        t.CREATIVE, 'special', 'character', 'free', 'waveshaper',
-    )),
+    #product('Smartelectronix', 'Bouncy', aufx('BrDJ', 'BNCY'), tags(
+    #    t.DELAY, 'special', 'free', 'zipper-noise',
+    #)),
+    #product('Smartelectronix', 'Buffer Override', aumf('DFX!', 'buff'), tags(
+    #    t.CREATIVE, 'special', 'free', 'FSU',
+    #)),
+    #product('Smartelectronix', 'Geometer', aumf('DFX!', 'DFgr'), tags(
+    #    t.CREATIVE, 'special', 'character', 'free', 'waveshaper',
+    #)),
     #product('Smartelectronix', 'Monomaker', aufx('DFX!', 'mono'), tags(
     #    t.IMAGE, 'character', 'free', 'zipper-noise',
     #)),
-    product('Smartelectronix', 'Polarizer', aufx('DFX!', 'pola'), tags(
-        t.DIST, 'character', 'bitcrusher', 'free',
-    )),
-    product('Smartelectronix', 'Scrubby', aumf('DFX!', 'scub'), tags(
-        t.CREATIVE, 'special', 'free', 'pitch',
-    )),
-    product('Smartelectronix', 'Skidder', aumf('DFX!', 'skid'), tags(
-        t.MOD, 'tremolo', 'special', 'free',
-    )),
-    product('Smartelectronix', 'Transverb', aumf('DFX!', 'DFtv'), tags(
-        t.CREATIVE, 'delay', 'special', 'pitch', 'free',
-    )),
+    #product('Smartelectronix', 'Polarizer', aufx('DFX!', 'pola'), tags(
+    #    t.DIST, 'character', 'bitcrusher', 'free',
+    #)),
+    #product('Smartelectronix', 'Scrubby', aumf('DFX!', 'scub'), tags(
+    #    t.CREATIVE, 'special', 'free', 'pitch',
+    #)),
+    #product('Smartelectronix', 'Skidder', aumf('DFX!', 'skid'), tags(
+    #    t.MOD, 'tremolo', 'special', 'free',
+    #)),
+    #product('Smartelectronix', 'Transverb', aumf('DFX!', 'DFtv'), tags(
+    #    t.CREATIVE, 'delay', 'special', 'pitch', 'free',
+    #)),
 
     # -Softube-
     product('Softube', 'Abbey Road RS127 Box', aufx('AbRd', 'r127'), tags(
-        t.EQ, 'character', 'exciter',
+        t.EQEX, 'eq', 'character', 'exciter',
     )),
     product('Softube', 'Abbey Road RS127 Rack', aufx('AbRd', 'g127'), tags(
-        t.EQ, 'character', 'exciter',
+        t.EQEX, 'eq', 'character', 'exciter',
     )),
     product('Softube', 'Abbey Road RS135', aufx('AbRd', '8kbx'), tags(
-        t.EQ, 'character', 'exciter',
+        t.EQEX, 'eq', 'character', 'exciter',
     )),
     product('Softube', 'Acoustic Feedback', aufx('SfTb', 'FbAU'), tags(
         t.AMP, 'guitar', 'special',
@@ -682,7 +708,7 @@ FX = {
         t.COMP, 'character', 'dynamics', 'saturation', 'sidechain',
     )),
     product('Softube', 'Focusing Equalizer', aufx('SfTb', 'ChEq'), tags(
-        t.EQ, 'character',
+        t.EQCR, 'eq', 'character',
     )),
     product('Softube', 'Metal Amp Room', aufx('SfTb', 'Mtal'), tags(
         t.AMP, 'distortion', 'character',
@@ -694,13 +720,13 @@ FX = {
     #    'character', 'eq',
     #)),
     product('Softube', 'Saturation Knob', aufx('SfTb', 'satn'), tags(
-        t.DIST, 'character', 'saturation',
+        t.SAT, 'character',
     )),
     product('Softube', 'Spring Reverb', aufx('SfTb', 'SpRn'), tags(
         t.VERB, 'spring',
     )),
     product('Softube', 'Summit Audio EQF-100', aufx('SfTb', 'e100'), tags(
-        t.EQ, 'character',
+        t.EQCR, 'eq', 'character',
     )),
     product(
         'Softube', 'Summit Audio Grand Channel', aufx('SfTb', 'SAGC'),
@@ -714,10 +740,10 @@ FX = {
         t.EQ,
     )),
     product('Softube', 'Transient Shaper', aufx('SfTb', 'Shpe'), tags(
-        t.DYN, 'transient shaper', 'multiband',
+        t.TRANS, 'dynamics', 'transient shaper', 'multiband',
     )),
     product('Softube', 'Trident A-Range', aufx('SfTb', 'Aran'), tags(
-        t.EQ, 'character', 'saturation',
+        t.EQCR, 'eq', 'character', 'saturation',
     )),
     product('Softube', 'TSAR-1', aufx('SfTb', 'tsar'), tags(
         t.VERB,
@@ -736,10 +762,10 @@ FX = {
         'saturation', 'sidechain',
     )),
     product('Softube', 'Tube-Tech ME 1B', aufx('SfTb', 'ME1B'), tags(
-        t.EQ, 'character', 'saturation',
+        t.EQCR, 'eq', 'character', 'saturation',
     )),
     product('Softube', 'Tube-Tech PE 1C', aufx('SfTb', 'PE1C'), tags(
-        t.EQ, 'character', 'saturation',
+        t.EQCR, 'eq', 'character', 'saturation',
     )),
     product('Softube', 'Valley People Dyna-mite', aufx('SfTb', 'DaMt'), tags(
         t.DYN, 'character', 'gate', 'expander', 'ducking', 'keying',
@@ -754,7 +780,7 @@ FX = {
 
     # -Solid State Logic-
     product('Solid State Logic', 'SSL X-Saturator', aufx('SSL ', 'XSAT'), tags(
-        t.DIST, 'saturation', 'analog', 'character',
+        t.SAT, 'analog', 'character',
     )),
 
     # -Sonic Charge-
@@ -777,7 +803,7 @@ FX = {
         t.DYN, 'character', 'limiter',
     )),
     product('Sonnox', 'Oxford TransMod', aufx('Sony', 'OxTM'), tags(
-        t.DYN, 'character', 'transient shaper', 'distortion',
+        t.TRANS, 'character', 'dynamics', 'distortion',
     )),
 
     # -Soundhack-
@@ -832,7 +858,7 @@ FX = {
         t.GRAIN, 'delay', 'special',
     )),
     product('Soundtoys', 'Decapitator', aufx('SToy', 'DEC '), tags(
-        t.DIST, 'character', 'saturation',
+        t.SAT, 'character',
     )),
     product('Soundtoys', 'DevilLoc', aufx('SToy', 'DVL '), tags(
         t.DYN, 'character', 'distortion', 'limiter', 'compressor',
@@ -881,6 +907,11 @@ FX = {
     # product('SPL', 'DeVerb', aufx('SPL1', 'SPDV'), tags(
     #     'dynamics', 'transient shaper',
     # )),
+
+    # -Sugar Bytes-
+    product('Sugar Bytes', 'Turnado', aumf('Sbar', 'sbtu'), tags(
+        t.FSU,
+    )),
 
     # -Surreal Machines-
     product('Surreal Machines', 'Dub Machines', livefx, tags(
@@ -931,7 +962,7 @@ FX = {
         t.IMAGE, 'bass', 'exciter',
     )),
     product('Waves', 'MaxxBass', aufx('ksWV', 'MXBS'), tags(
-        t.OTHER, 'bass', 'exciter',
+        t.EQEX, 'eq', 'bass', 'exciter',
     )),
     product('Waves', 'The Kings Microphones', aufx('ksWV', 'TKMS'), tags(
         t.AMP, 'character', 'special', 'vocal',

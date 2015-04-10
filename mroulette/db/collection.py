@@ -32,7 +32,7 @@ class Collection(object):
         for brand, products in self._rand_by_brand.iteritems():
             for product in products:
                 for tag in product.tags:
-                    self._rand_by_tag[tag].append(product)
+                    self._rand_by_tag[tag.lower()].append(product)
 
     def _prepare_randomness(self):
         result = defaultdict(list)
@@ -53,4 +53,4 @@ class Collection(object):
         return result
 
     def random_by_tag(self, tag):
-        return random.choice(self._rand_by_tag[tag])
+        return random.choice(self._rand_by_tag[tag.lower()])

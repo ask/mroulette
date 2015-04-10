@@ -8,7 +8,9 @@ class t(object):
     DELAY = 'Delay'
     DIST = 'Distortion'
     DYN = 'Dynamics'
-    EQ = 'EQ'
+    EQ = 'EQ Clean'
+    EQCR = 'EQ Character'
+    EQEX = 'EQ Exciter'
     FILT = 'Filter'
     FLUX = 'Flux'
     FSU = 'FSU'
@@ -18,8 +20,10 @@ class t(object):
     METER = 'Metering'
     MOD = 'Modulation'
     PITCH = 'Pitch'
-    VERB = 'Reverb'
     OTHER = 'Specialized'
+    SAT = 'Saturation'
     STRIP = 'Strip'
+    TRANS = 'Transient Shaper'
+    VERB = 'Reverb'
 
 tags = lambda *x: x

@@ -229,6 +229,12 @@ INST = {
     product('Atom Hub', 'A day in the park', kontakt, tags(
         'kontakt', 'drums', 'acoustic',
     )),
+    product('Atom Hub', 'Drunkeytar', kontakt, tags(
+        'kontakt', 'guitar', 'acoustic',
+    )),
+    product('Atom Hub', 'Harmogeddon', kontakt, tags(
+        'kontakt', 'harmonica', 'acoustic',
+    )),
     product('Atom Hub', 'Old Mandolin v2', kontakt, tags(
         'kontakt', 'acoustic',
     )),
@@ -584,9 +590,9 @@ INST = {
     )),
 
     # -ReFX-
-    product('ReFX', 'QuadraSID', aumu('reFX', 'QSID'), tags(
-        'synth', 'sid', 'digital', 'retro',
-    )),
+    #product('ReFX', 'QuadraSID', aumu('reFX', 'QSID'), tags(
+    #    'synth', 'sid', 'digital', 'retro',
+    #)),
 
     # -Rhythmic Robot-
     product('Rhythmic Robot', 'Grit Kit', kontakt, tags(
@@ -678,6 +684,11 @@ INST = {
         'synth', 'subtractive', 'kontakt', 'analog',
     )),
 
+    # -Soundprovocation-
+    product('Soundprovocation', 'Vocalotheque', kontakt, tags(
+        'vocal', 'male', 'female', 'sampled', 'kontakt',
+    )),
+
     # -Spaectrum Arts-
     product('Spaectrum Arts', 'The Container', kontakt, tags(
         'drums', 'percussion', 'fx', 'pads', 'acoustic', 'special',
@@ -687,16 +698,42 @@ INST = {
     product('Spitfire', 'Artisan Cello', kontakt, tags(
         'strings', 'cello', 'solo', 'acoustic', 'kontakt',
     )),
-    product('Spitfire', 'LABS Bike Bells', kontakt, tags(
+    product('Spitfire', 'Artisan Violins', kontakt, tags(
+        'strings', 'violin', 'solo', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire', 'Swarm Mandolins', kontakt, tags(
+        'mandolin', 'solo', 'acoustic', 'kontakt',
+    )),
+
+    # -Spitfire LABS-
+    product('Spitfire LABS', 'Bike Bells', kontakt, tags(
         'bell', 'acoustic', 'kontakt',
     )),
-    product('Spitfire', 'LABS Mandolin', kontakt, tags(
+    product('Spitfire LABS', 'Hamster Cage', kontakt, tags(
+        'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Kalimba', kontakt, tags(
+        'kalimba', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Kitchen Sink', kontakt, tags(
+        'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Mandolin', kontakt, tags(
         'mandolin', 'acoustic', 'kontakt',
     )),
-    product('Spitfire', 'LABS Melodica', kontakt, tags(
+    product('Spitfire LABS', 'Melodica', kontakt, tags(
         'melodica', 'acoustic', 'kontakt',
     )),
-    product('Spitfire', 'LABS Scary Strings', kontakt, tags(
+    product('Spitfire LABS', 'Metal Fan', kontakt, tags(
+        'tuned', 'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Peel Guitar', kontakt, tags(
+        'guitar', 'electric', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Plucked Piano', kontakt, tags(
+        'piano', 'plucked', 'acoustic', 'kontakt',
+    )),
+    product('Spitfire LABS', 'Scary Strings', kontakt, tags(
         'strings', 'acoustic', 'kontakt', 'eerie',
     )),
 
