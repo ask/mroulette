@@ -407,6 +407,17 @@ FX = {
         t.DIST, 'special', 'character', 'free',
     )),
 
+    # -Klanghelm-
+    product('Klanghelm', 'SDRR', aufx('KlHm', 'SDRR'), tags(
+        t.SAT, 'distortion', 'character',
+    )),
+    product('Klanghelm', 'VUMTDuo', aufx('KlHm', 'VUTd'), tags(
+        t.METER, 'VU', 'RMS', 'PPM', 'stereo',
+    )),
+    product('Klanghelm', 'VUMTSolo', aufx('KlHm', 'VUTs'), tags(
+        t.METER, 'VU', 'RMS', 'PPM', 'mono',
+    )),
+
     # -K-Devices-
     product('K-Devices', 'Holder', livefx, tags(
         t.CREATIVE, 'special', 'spectral', 'freeze', 'Live', 'maxforlive',
@@ -602,6 +613,11 @@ FX = {
     # -Plogue-
     product('Plogue', 'Chipcrusher', aufx('PLOG', 'PLGP'), tags(
         t.DIST, 'character', 'bitcrush', 'latency',
+    )),
+
+    # -PSPaudioware-
+    product('PSP', 'TripleMeter', aufx('PSPa', 'PPm3'), tags(
+        t.METER, 'stereo', 'VU', 'RMS', 'PPM',
     )),
 
     # -Relab-

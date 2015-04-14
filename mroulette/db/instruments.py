@@ -20,7 +20,7 @@ INST = {
         'synth', 'fm',
     )),
     product('Ableton', 'Tension', live, tags(
-        'synth', 'physmod', 'string',
+        'synth', 'physmod', 'plucked', 'strings',
     )),
     product('Ableton', 'Analog', live, tags(
         'synth', 'analog', 'subtractive',
@@ -52,13 +52,13 @@ INST = {
         'bass', 'acoustic',
     )),
     product('Acousticsamples', 'GD-6', uvi, tags(
-        'guitar', 'acoustic',
+        'guitar', 'acoustic', 'plucked',
     )),
     product('Acousticsamples', 'Sunbird', uvi, tags(
-        'guitar', 'acoustic',
+        'guitar', 'acoustic', 'plucked',
     )),
     product('Acousticsamples', 'Telematic', uvi, tags(
-        'guitar', 'acoustic',
+        'guitar', 'acoustic', 'plucked', 'telecaster',
     )),
     product('Acousticsamples', 'F Grand 278', uvi, tags(
         'piano', 'grand', 'acoustic',
@@ -73,7 +73,7 @@ INST = {
         'drums', 'acoustic',
     )),
     product('Acousticsamples', 'UKU', uvi, tags(
-        'ukulele', 'acoustic', 'guitar',
+        'ukulele', 'acoustic', 'plucked',
     )),
 
     # -Admiral Quality-
@@ -172,7 +172,7 @@ INST = {
 
     # -Aria Sounds-
     product('Aria Sounds', 'London Symphonic Strings', kontakt, tags(
-        'strings', 'kontakt', 'acoustic', 'violin',
+        'strings', 'kontakt', 'acoustic', 'violin', 'bowed',
     )),
 
     # -Arturia-
@@ -230,7 +230,7 @@ INST = {
         'kontakt', 'drums', 'acoustic',
     )),
     product('Atom Hub', 'Drunkeytar', kontakt, tags(
-        'kontakt', 'guitar', 'acoustic',
+        'kontakt', 'guitar', 'acoustic', 'plucked',
     )),
     product('Atom Hub', 'Harmogeddon', kontakt, tags(
         'kontakt', 'harmonica', 'acoustic',
@@ -322,7 +322,7 @@ INST = {
 
     # -FXpansion-
     product('FXpansion', 'Amber', aumu('FXPN', 'AMBR'), tags(
-        'analog', 'string', 'ensemble',
+        'analog', 'strings', 'ensemble',
     )),
     product('FXpansion', 'Cypher', aumu('FXPN', 'CYPH'), tags(
         'analog', 'FM',
@@ -406,10 +406,11 @@ INST = {
 
     # -Modwheel-
     product('Modwheel', 'Biscuit Tin Guitar', kontakt, tags(
-        'kontakt', 'guitar', 'acoustic',
+        'kontakt', 'guitar', 'acoustic', 'plucked',
     )),
     product('Modwheel', 'The Lowdown', kontakt, tags(
-        'bass', 'string', 'bow', 'acoustic', 'kontakt', 'upright',
+        'bass', 'strings', 'bow', 'acoustic', 'kontakt', 'upright',
+        'plucked', 'bowed',
     )),
 
     # -MOTU-
@@ -497,7 +498,7 @@ INST = {
         'Mark I', 'A-200', 'clavinet', 'pianet', 'electric', 'kontakt',
     )),
     product('Native Instruments', 'Session Strings', kontakt, tags(
-        'strings', 'ensemble', 'acoustic', 'kontakt',
+        'strings', 'ensemble', 'acoustic', 'kontakt', 'bowed',
     )),
     product('Native Instruments', 'Vintage Organs', kontakt, tags(
         'organ', 'hammond B3', 'hammond C3', 'hammond M3',
@@ -551,13 +552,19 @@ INST = {
 
     # -Orange Tree-
     product('Orange Tree', 'Angelic Harp', kontakt, tags(
-        'string', 'acoustic', 'kontakt', 'harp',
+        'plucked', 'acoustic', 'kontakt', 'harp',
     )),
     product('Orange Tree', 'Angelic Zither', kontakt, tags(
-        'string', 'acoustic', 'kontakt', 'zither',
+        'plucked', 'acoustic', 'kontakt', 'zither',
+    )),
+    product('Orange Tree', 'EAG - Steel Strings', kontakt, tags(
+        'guitar', 'plucked', 'accoustic',
+    )),
+    product('Orange Tree', 'EEG - Stratosphere', kontakt, tags(
+        'guitar', 'plucked', 'electric', 'stratocaster',
     )),
     product('Orange Tree', 'Grand Kalimba', kontakt, tags(
-        'string', 'acoustic', 'kontakt', 'kalimba',
+        'plucked', 'acoustic', 'kontakt', 'kalimba',
     )),
 
     # -Plogue-
@@ -630,8 +637,14 @@ INST = {
     product('Soniccouture', 'Array Mbira', kontakt, tags(
         'kontakt', 'acoustic', 'kalimba',
     )),
+    product('Soniccouture', 'Giant Bass Tongue Drum', kontakt, tags(
+        'kontakt', 'accoustic', 'drums', 'percussion', 'tuned',
+    )),
+    product('Soniccouture', 'The Hammersmith PRO', kontakt, tags(
+        'kontakt', 'piano', 'acoustic',
+    )),
     product('Soniccouture', 'KIM', kontakt, tags(
-        'kontakt', 'acoustic', 'strings',
+        'kontakt', 'acoustic', 'plucked',
     )),
     product('Soniccouture', 'Konkrete Drums 1', live, tags(
         'drums', 'Live',
@@ -696,10 +709,10 @@ INST = {
 
     # -Spitfire-
     product('Spitfire', 'Artisan Cello', kontakt, tags(
-        'strings', 'cello', 'solo', 'acoustic', 'kontakt',
+        'strings', 'cello', 'solo', 'acoustic', 'kontakt', 'bowed',
     )),
     product('Spitfire', 'Artisan Violins', kontakt, tags(
-        'strings', 'violin', 'solo', 'acoustic', 'kontakt',
+        'strings', 'violin', 'solo', 'acoustic', 'kontakt', 'bowed',
     )),
     product('Spitfire', 'Swarm Mandolins', kontakt, tags(
         'mandolin', 'solo', 'acoustic', 'kontakt',
@@ -728,13 +741,13 @@ INST = {
         'tuned', 'percussion', 'acoustic', 'kontakt',
     )),
     product('Spitfire LABS', 'Peel Guitar', kontakt, tags(
-        'guitar', 'electric', 'acoustic', 'kontakt',
+        'guitar', 'electric', 'acoustic', 'kontakt', 'plucked',
     )),
     product('Spitfire LABS', 'Plucked Piano', kontakt, tags(
         'piano', 'plucked', 'acoustic', 'kontakt',
     )),
     product('Spitfire LABS', 'Scary Strings', kontakt, tags(
-        'strings', 'acoustic', 'kontakt', 'eerie',
+        'strings', 'acoustic', 'kontakt', 'eerie', 'bowed',
     )),
 
     # -Steinberg-
@@ -751,6 +764,9 @@ INST = {
     )),
 
     # -Uhe-
+    product('u-he', 'ACE', aumu('UHfX', 'acEU'), tags(
+        'synth', 'analog', 'modular',
+    )),
     product('u-he', 'Bazille', aumu('UHfX', 'UpH4'), tags(
         'synth', 'analog', 'phase modulation', 'FM', 'modular',
     )),
@@ -786,7 +802,7 @@ INST = {
         'flute', 'oboe', 'clarinet', 'bassoon', 'trumpet',
         'alto saxophone', 'french horn', 'trombone', 'bass tuba',
         'accordion', 'guitar', 'harp', 'violin', 'viola', 'violincello',
-        'contrabass', 'acoustic', 'special', 'avant', 'IRCAM',
+        'contrabass', 'acoustic', 'special', 'avant', 'IRCAM', 'bowed',
     )),
     product('UVI', 'Digital Synsations', uvi, tags(
         'digital', 'synth', 'sampled',
