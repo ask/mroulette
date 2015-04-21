@@ -188,6 +188,11 @@ FX = {
         t.FILT, 'special', 'mfx', 'character', 'sidechain',
     )),
 
+    # -Dimitry Sches-
+    product('Dimitry Sches', 'Tantra', aufx('DSCH', 'TntR'), tags(
+        t.MOD, 'delay', 'distortion', 'flanger', 'FSM', 'multFX',
+    )),
+
     # -DMG Audio-
     product('DMG Audio', 'Essence', aumf('DMGa', 'Esse'), tags(
         t.DYN, 'eq', 'desser', 'vocal',
@@ -240,6 +245,11 @@ FX = {
     )),
     product('Exponential Audio', 'R2', aufx('EXPa', 'MCs2'), tags(
         t.VERB,
+    )),
+
+    # -Fabfilter-
+    product('Fabfilter', 'Volcano 2', aumf('FabF', 'FV2l'), tags(
+        t.FILT, 'creative',
     )),
 
     # -Flux-
