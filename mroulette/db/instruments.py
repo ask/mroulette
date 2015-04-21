@@ -662,6 +662,9 @@ INST = {
     )),
 
     # -SoundDUST-
+    product('SoundDUST', 'Cloud Viola', kontakt, tags(
+        'kontakt', 'acoustic', 'strings',
+    )),
     product('SoundDUST', 'Dulcitone 1884x2', kontakt, tags(
         'kontakt', 'acoustic', 'dulcitone', 'keys',
     )),
