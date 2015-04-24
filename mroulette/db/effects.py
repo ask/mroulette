@@ -35,7 +35,7 @@ FX = {
 
     # -Aegean Music-
     product('Aegean Music', 'Spirit Reverb', aumf('Aegn', 'Amsr'), tags(
-        t.VERB, 'spring', 'special', 'amp',
+        t.VERB, 'spring', 'special', t.AMP,
     )),
 
     # -Airwindows-
@@ -123,7 +123,7 @@ FX = {
         'logic:modulation', 'sidechain',
     )),
     product('Apple', 'Rotor Cabinet', logic, tags(
-        'logic', 'amp', 'cabinet', 'modulation', 'character',
+        'logic', t.AMP, 'cabinet', 'modulation', 'character',
         'logic:modulation',
     )),
     product('Apple', 'Scanner Vibrato', logic, tags(
@@ -157,7 +157,7 @@ FX = {
 
     # -Audio Damage-
     product('Audio Damage', 'Bitcom', aumf('AuDa', 'ADbc'), tags(
-        t.FSU, 'special', 'sequencer', 'bitcrush', 'distortion',
+        t.FSU, 'special', 'sequencer', 'bitcrusher', 'distortion',
     )),
 
     # -Audio Ease-
@@ -180,7 +180,7 @@ FX = {
 
     # -Celemony-
     product('Celemony', 'Melodyne Editor', aumf('CLMY', 'MPLG'), tags(
-        t.PITCH, 'vocal', 'special', 'creative',
+        t.PITCH, 'vocal', 'special', 'creative', 'autotune',
     )),
 
     # -Cytomic-
@@ -190,7 +190,7 @@ FX = {
 
     # -Dimitry Sches-
     product('Dimitry Sches', 'Tantra', aufx('DSCH', 'TntR'), tags(
-        t.MOD, 'delay', 'distortion', 'flanger', 'FSM', 'multFX',
+        t.MOD, 'delay', 'distortion', 'flanger', 'FSU', 'multFX',
     )),
 
     # -DMG Audio-
@@ -238,7 +238,7 @@ FX = {
 
     # -Exponential Audio-
     product('Exponential Audio', 'Excalibur', aufx('EXPa', 'EXca'), tags(
-        t.MOD, 'delay', 'chorus', 'flanger', 'pitch', 'amp', 'ringmod',
+        t.MOD, 'delay', 'chorus', 'flanger', t.PITCH, t.AMP, 'ringmod',
     )),
     product('Exponential Audio', 'PhoenixVerb', aufx('EXPa', 'MCsr'), tags(
         t.VERB,
@@ -248,6 +248,12 @@ FX = {
     )),
 
     # -Fabfilter-
+    product('Fabfilter', 'Saturn', aumf('FabF', 'FSat'), tags(
+        t.DIST, 'creative', 'character',
+    )),
+    product('Fabfilter', 'Timeless 2', aumf('FabF', 'FTms'), tags(
+        t.DELAY, 'creative', 'tape',
+    )),
     product('Fabfilter', 'Volcano 2', aumf('FabF', 'FV2l'), tags(
         t.FILT, 'creative',
     )),
@@ -287,7 +293,7 @@ FX = {
     )),
     product('Flux', 'Syrah', aufx('Fspd', 'fxSy'), tags(
         t.FLUX, 'dynamics', 'mix', 'mastering', 'bus',
-        'track', 'compression', 'special',
+        'track', 'compressor', 'special',
     )),
 
     # -Focusrite-
@@ -330,49 +336,49 @@ FX = {
 
     # -Ina-GRM-
     product('Ina-GRM', 'Band pass', aumf('Grm ', 'BaPS'), tags(
-        t.GRM, 'special', 'filter', 'grm',
+        t.GRM, 'special', 'filter',
     )),
     product('Ina-GRM', 'Comb filters', aumf('Grm ', 'Comb'), tags(
-        t.GRM, 'special', 'filter', 'grm',
+        t.GRM, 'special', 'filter',
     )),
     product('Ina-GRM', 'Contrast', aumf('Grm ', 'ctrG'), tags(
-        t.GRM, 'special', 'spectral', 'grm',
+        t.GRM, 'special', 'spectral',
     )),
     product('Ina-GRM', 'Delays', aumf('Grm ', 'Dely'), tags(
-        t.GRM, 'special', 'delay', 'grm',
+        t.GRM, 'special', 'delay',
     )),
     product('Ina-GRM', 'Doppler', aumf('Grm ', 'DopS'), tags(
-        t.GRM, 'special', 'delay', 'imaging', 'grm',
+        t.GRM, 'special', 'delay', 'imaging',
     )),
     product('Ina-GRM', 'Evolution', aumf('Grm ', 'GrEv'), tags(
-        t.GRM, 'special', 'grm',
+        t.GRM, 'special',
     )),
     product('Ina-GRM', 'Equalize', aumf('aGRM', 'EquS'), tags(
-        t.GRM, 'special', 'spectral', 'grm',
+        t.GRM, 'special', 'spectral',
     )),
     product('Ina-GRM', 'Freeze', aumf('Grm ', 'Free'), tags(
-        t.GRM, 'special', 'granular', 'grm',
+        t.GRM, 'special', 'granular',
     )),
     product('Ina-GRM', 'Fusion', aumf('Grm ', 'GFus'), tags(
-        t.GRM, 'special', 'grm',
+        t.GRM, 'special',
     )),
     product('Ina-GRM', 'Grinder', aumf('Grm ', 'Cruh'), tags(
-        t.GRM, 'special', 'grm', 'sidechain',
+        t.GRM, 'special', 'sidechain',
     )),
     product('Ina-GRM', 'Pitch Accum', aumf('Grm ', 'Pitc'), tags(
-        t.GRM, 'special', 'grm',
+        t.GRM, 'special',
     )),
     product('Ina-GRM', 'Reson', aumf('Grm ', 'Reso'), tags(
-        t.GRM, 'special', 'grm',
+        t.GRM, 'special',
     )),
     product('Ina-GRM', 'FreqShift', aumf('Grm ', 'FrsG'), tags(
-        t.GRM, 'special', 'spectral', 'grm',
+        t.GRM, 'special', 'spectral',
     )),
     product('Ina-GRM', 'Shuffling', aumf('Grm ', 'Shuf'), tags(
-        t.GRM, 'special', 'delay', 'grm', 'sidechain',
+        t.GRM, 'special', 'delay', 'sidechain',
     )),
     product('Ina-GRM', 'FreqWarp', aumf('Grm ', 'Fw G'), tags(
-        t.GRM, 'special', 'spectral', 'grm',
+        t.GRM, 'special', 'spectral',
     )),
 
     # -IRCAM-
@@ -401,7 +407,7 @@ FX = {
         t.STRIP, 'vocal',
     )),
     product('iZotope', 'Ozone 6', aufx('iZtp', 'ZnO6'), tags(
-        t.STRIP, 'mastering', 'compression', 'dynamics', 'limiter', 'eq',
+        t.STRIP, 'mastering', 'compressor', 'dynamics', 'limiter', 'eq',
         'dyneq', 'matching', 'exciter', 'imaging',
     )),
     product('iZotope', 'RX 4 Declicker', aufx('iZtp', 'Zn4K'), tags(
@@ -464,7 +470,7 @@ FX = {
         t.EQEX, 'eq', 'exciter',
     )),
     product('Kush Audio', 'Clariphonic mkii', aufx('Kush', 'Clr2'), tags(
-        t.EQEX, 'eq', 'exciter' 'midside',
+        t.EQEX, 'eq', 'exciter', 'MS',
     )),
     product('Kush Audio', 'Electra DSP', aufx('Kush', 'Elec'), tags(
         t.EQCR, 'eq', 'character', 'analog',
@@ -527,7 +533,7 @@ FX = {
 
     # -Mathew Lane-
     product('Mathew Lane', 'DrMS v4', aufx('MaLa', 'DMS4'), tags(
-        t.IMAGE, 'midside',
+        t.IMAGE, 'MS',
     )),
 
     # -Max for Cats-
@@ -571,6 +577,12 @@ FX = {
     )),
 
     # -Metric Halo-
+    product('Metric Halo', 'MH Channel Strip', aufx('BJJk', 'Chns'), tags(
+        t.STRIP, 'dynamics', 'eq',
+    )),
+    product('Metric Halo', 'MH Character', aufx('MHL ', 'CHAR'), tags(
+        t.SAT, 'character',
+    )),
     product('Metric Halo', 'Dirty Delay', aufx('MHL ', 'DELY'), tags(
         t.DELAY,
     )),
@@ -586,7 +598,7 @@ FX = {
         t.CREATIVE, 'special', 'delay', 'vocoder', 'pitch', 'sidechain',
     )),
     product('Native Instruments', 'Guitar Rig 5', aumf('-NI-', 'NiG5'), tags(
-        t.AMP, 'guitar', 'strip', 'sidechain', 'amp',
+        t.AMP, 'guitar', 'strip', 'sidechain', t.AMP,
     )),
     #product('Native Instruments', 'Solid Bus Comp', aufx('-NI-', 'Ni$6'), tags(
     #    t.COMP, 'dynamics',
@@ -611,7 +623,7 @@ FX = {
         t.DELAY, 'reverb'
     )),
     product('Native Instruments', 'Vari Comp', aufx('-NI-', 'Ni$;'), tags(
-        t.COMP, 'dynamics', 'manley', 'vari-mu', 'sidechain',
+        t.COMP, 'dynamics', 'vari-mu', 'sidechain',
     )),
     product('Native Instruments', 'VC 160', aufx('-NI-', 'Ni$2'), tags(
         t.COMP, 'dynamics', 'dbx', 'VCA',
@@ -630,7 +642,7 @@ FX = {
 
     # -Plogue-
     product('Plogue', 'Chipcrusher', aufx('PLOG', 'PLGP'), tags(
-        t.DIST, 'character', 'bitcrush', 'latency',
+        t.DIST, 'character', 'bitcrusher', 'latency',
     )),
 
     # -PSPaudioware-
@@ -690,6 +702,18 @@ FX = {
         tags(t.STRIP),
     ),
 
+    # -Sly-fy-
+    product('Sly-fy', 'Axis EQ', aufx('SlyF', 'KPI1'), tags(
+        t.EQCR, 'api 550a', 'api 550b', 'character',
+    )),
+    product('Sly-Fy', 'Deflector', aufx('SlyF', 'Defl'), tags(
+        t.COMP, 'distressor', 'character', 'dynamics',
+    )),
+    product('Sly-Fy', 'Kaya', aufx('SlyF', 'KPA1'), tags(
+        t.SAT, 'tube', 'tape', 'amp', 'character',
+    )),
+
+
     # -Smartelectronix-
     #product('Smartelectronix', 'Ambience', aufx('MagJ', '07C0BCD2'), tags(
     #    t.VERB, 'free',
@@ -739,7 +763,7 @@ FX = {
         t.AMP, 'distortion', 'character',
     )),
     product('Softube', 'Console 1', aufx('SfTb', 'ScPi'), tags(
-        t.STRIP, 'ssl', 'character', 'eq', 'dynamics',
+        t.STRIP, 'ssl 4000', 'ssl 9000', 'character', 'eq', 'dynamics',
     )),
     product('Softube', 'FET Compressor', aufx('SfTb', 'Fcpn'), tags(
         t.COMP, 'character', 'dynamics', 'saturation', 'sidechain',
@@ -809,7 +833,7 @@ FX = {
     )),
     product('Softube', 'Valley People Dyna-mite', aufx('SfTb', 'DaMt'), tags(
         t.DYN, 'character', 'gate', 'expander', 'ducking', 'keying',
-        'compression', 'saturation', 'sidechain',
+        'compressor', 'saturation', 'sidechain',
     )),
     product('Softube', 'Vintage Amp Room', aufx('SfTb', 'ViAU'), tags(
         t.AMP, 'distortion', 'character',
@@ -833,7 +857,7 @@ FX = {
 
     # -Sonnox-
     product('Sonnox', 'Oxford Dynamics', aufx('Sony', 'OxDy'), tags(
-        t.DYN, 'character', 'compression', 'gate', 'expander', 'limiter',
+        t.DYN, 'character', 'compressor', 'gate', 'expander', 'limiter',
         'saturation', 'sidechain',
     )),
     product('Sonnox', 'Oxford Inflator', aufx('Sony', 'OxIn'), tags(
@@ -857,7 +881,7 @@ FX = {
     #    t.DYN, 'dynamics', 'free',
     #)),
     product('Soundhack', '+decimate', aufx('SDHK', 'er10'), tags(
-        t.DIST, 'character', 'bitcrush', 'free',
+        t.DIST, 'character', 'bitcrusher', 'free',
     )),
     #product('Soundhack', '+delay', aumf('SDHK', '+dla'), tags(
     #    t.DELAY, 'free',
@@ -925,7 +949,7 @@ FX = {
         t.DELAY, 'special', 'character', 'zipper-noise',
     )),
     product('Soundtoys', 'Little Radiator', aufx('SToy', 'LRD '), tags(
-        t.AMP, 'character', 'amp',
+        t.AMP, 'character', t.AMP,
     )),
     product('Soundtoys', 'Microshift', aufx('SToy', 'MCS '), tags(
         t.MOD, 'delay', 'pitch',
@@ -937,7 +961,7 @@ FX = {
         t.MOD, 'special', 'character',
     )),
     product('Soundtoys', 'Radiator', aufx('SToy', 'RAD '), tags(
-        t.AMP, 'character', 'amp',
+        t.AMP, 'character', t.AMP,
     )),
     product('Soundtoys', 'Tremolator', aufx('SToy', 'TRM '), tags(
         t.MOD, 'special', 'character',
@@ -973,10 +997,13 @@ FX = {
         t.FILT, 'special', 'delay',
     )),
     product('u-he', 'FilterscapeQ6', aumf('UHfX', 'FSQ6'), tags(
-        t.EQ, 'dynamic',
+        t.EQ,
     )),
     product('u-he', 'MFM2', aumf('UHfX', 'MFM2'), tags(
         t.DELAY, 'pitch', 'special',
+    )),
+    product('u-he', 'Satin', aumf('UHfX', 'uhST'), tags(
+        t.SAT, 'delay', 'flanger', 'tape', 'character',
     )),
 
     # -Unfiltered Audio-
@@ -1024,5 +1051,8 @@ FX = {
     # -Zynaptiq-
     product('Zynaptiq', 'Morph 2', aumf('ZYNQ', 'MRPS'), tags(
         t.CREATIVE, 'special', 'morph', 'sidechain', 'vocoder',
+    )),
+    product('Zynaptiq', 'Pitchmap', aumf('ZYNQ', 'PTMP'), tags(
+        t.PITCH, 'autotune', 'creative', 'latency',
     )),
 }

@@ -140,6 +140,9 @@ INST = {
     product('Analogue Drums', 'Pizazz', kontakt, tags(
         'drums', 'kontakt', 'acoustic',
     )),
+    product('Analogue Drums', 'Royale', kontakt, tags(
+        'drums', 'kontakt', 'accoustic',
+    )),
     product('Analogue Drums', 'Smoker', kontakt, tags(
         'drums', 'kontakt', 'acoustic',
     )),
@@ -376,6 +379,9 @@ INST = {
     # -Loops De La Creme-
     product('Loops De La Creme', 'Bell Empire', kontakt, tags(
         'bell', 'acoustic', 'synth',
+    )),
+    product('Loops De La Creme', 'Booga Rocket Drums', kontakt, tags(
+        'kontakt', 'acoustic', 'drums',
     )),
     product('Loops De La Creme', 'Cymbal Rolls', kontakt, tags(
         'kontakt', 'acoustic', 'drums',
@@ -837,6 +843,9 @@ INST = {
         'drums', 'synth',
     )),
     product('Waldorf', 'Largo', aumu('3E00', '3E80'), tags(
+        'synth', 'wavetable', 'digital',
+    )),
+    product('Waldorf', 'Nave', aumu('Wald', 'nave'), tags(
         'synth', 'wavetable', 'digital',
     )),
     product('Waldorf', 'PPG Wave 2.V', aumu('3E00', '2900'), tags(
