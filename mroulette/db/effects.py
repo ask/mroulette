@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import absolute_import, unicode_literals
 
 from mroulette.types import (
@@ -159,6 +161,12 @@ FX = {
     product('Audio Damage', 'Bitcom', aumf('AuDa', 'ADbc'), tags(
         t.FSU, 'special', 'sequencer', 'bitcrusher', 'distortion',
     )),
+    product('Audio Damage', 'Discord3', aumf('AuDa', 'ADd3'), tags(
+        t.GRAIN, 'delay', 'special', 'pitch',
+    )),
+    product('Audio Damage', 'Kombinat Dva', aufx('AuDa', 'ADkd'), tags(
+        t.DIST, 'character', 'special', 'bitcrusher', 'waveshaper',
+    )),
 
     # -Audio Ease-
     product('Audio Ease', 'Altiverb 7', aufx('AEas', 'AVr5'), tags(
@@ -176,6 +184,11 @@ FX = {
     # -Boz Digital Labs-
     product('Boz Digital Labs', 'Bark of Dog', aufx('BDLa', 'BODg'), tags(
         t.EQEX, 'bass', 'voice of god', 'free',
+    )),
+
+    # -Brainworx-
+    product('Brainworx', 'bx_saturator V2', aufx('Brwx', 'bxa2'), tags(
+        t.SAT, 'character', 'distortion',
     )),
 
     # -Celemony-
@@ -325,6 +338,9 @@ FX = {
     product('Goodhertz', 'Panpot', aufx('GDHZ', 'PNPT'), tags(
         t.IMAGE,
     )),
+    product('Goodhertz', 'Trem Control', aufx('GDHZ', 'TRM1'), tags(
+        t.MOD, 'character', 'saturation', 'tremolo',
+    )),
     product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VCM1'), tags(
         t.COMP, 'dynamics', 'character', 'vinyl',
     )),
@@ -451,17 +467,17 @@ FX = {
         t.DELAY, 'special', 'creative', 'Live', 'maxforlive',
     )),
 
-    # -Klevgrand-
-    product('Klevgrand', 'R0Verb', aufx('Klev', 'rvrb'), tags(
+    # -Klevgränd Produktion-
+    product('Klevgränd Produktion', 'R0Verb', aufx('Klev', 'rvrb'), tags(
         t.VERB, 'special',
     )),
-    product('Klevgrand', 'SquashIt', aufx('Klev', 'Sqit'), tags(
+    product('Klevgränd Produktion', 'SquashIt', aufx('Klev', 'Sqit'), tags(
         t.DIST, 'character', 'multiband',
     )),
-    product('Klevgrand', 'Svep', aufx('Klev', 'modl'), tags(
+    product('Klevgränd Produktion', 'Svep', aufx('Klev', 'modl'), tags(
         t.MOD, 'phaser', 'flanger', 'chorus', 'free',
     )),
-    product('Klevgrand', 'Vandelay', aufx('Klev', 'dely'), tags(
+    product('Klevgränd Produktion', 'Vandelay', aufx('Klev', 'dely'), tags(
         t.DELAY, 'multiband', 'free',
     )),
 
@@ -548,6 +564,9 @@ FX = {
     product('McDSP', '4040 Retro Limiter', aufx('McDP', 'McDP'), tags(
         t.DYN, 'dynamics', 'limiter', 'character',
     )),
+    product('MCDSP', 'AE400 Active EQ', aufx('McDP', 'McAE'), tags(
+        t.EQ, 'dynamics', 'dynamic eq',
+    )),
     product('McDSP', 'Analog Channel AC101', aufx('McDP', 'AC01'), tags(
         t.SAT, 'character',
     )),
@@ -572,9 +591,6 @@ FX = {
         'MeldaProduction', 'MMultibandGranular', aumf('Meld', 'MMGr'),
         tags(t.GRAIN, 'special', 'sidechain', 'multiband'),
     ),
-    product('MeldaProduction', 'MXXX', aumf('Meld', 'MXXX'), tags(
-        t.GRAIN, 'special', 'combiner',
-    )),
 
     # -Metric Halo-
     product('Metric Halo', 'MH Channel Strip', aufx('BJJk', 'Chns'), tags(
@@ -850,6 +866,9 @@ FX = {
     # -Sonic Charge-
     product('Sonic Charge', 'Bitspeek', aumf('NuEd', 'NuSq'), tags(
         t.PITCH, 'vocal', 'special',
+    )),
+    product('Sonic Charge', 'Echobode', aumf('NuEd', 'NuEB'), tags(
+        t.MOD, 'special',
     )),
     product('Sonic Charge', 'Permut8', aumf('NuEd', 'NuPr'), tags(
         t.FSU, 'special',

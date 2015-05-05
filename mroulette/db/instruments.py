@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import absolute_import, unicode_literals
 
 from mroulette.types import (
@@ -252,6 +254,12 @@ INST = {
     product('Audio Damage', 'Basic', aumu('AuDa', 'ADba'), tags(
         'synth', 'subtractive',
     )),
+    product('Audio Damage', 'Phosphor', aumu('AuDa', 'ADph'), tags(
+        'synth', 'additive',
+    )),
+    product('Audio Damage', 'Tattoo', aumu('AuDa', 'Tatt'), tags(
+        'drums', 'synth',
+    )),
 
     # -Audio Realism-
     product('Audio Realism', 'ABL2x', aumu('AuRe', 'abl3'), tags(
@@ -357,6 +365,11 @@ INST = {
     # -iZotope-
     product('iZotope', 'IRIS 2', aumu('iZtp', 'Zir2'), tags(
         'synth', 'spectral', 'sampler',
+    )),
+
+    # -Klevgränd Produktion-
+    product('Klevgränd Produktion', 'Enkl', aumu('Klev', 'Enkl'), tags(
+        'synth', 'mono',
     )),
 
     # -Korg-
