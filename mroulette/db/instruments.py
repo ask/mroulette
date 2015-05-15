@@ -280,6 +280,11 @@ INST = {
         'synth', 'chip', 'subtractive',
     )),
 
+    # -Audiowarp-
+    product('Audiowarp', 'BOCS3', kontakt, tags(
+        'synth', 'lofi', 'tape',
+    )),
+
     # -Beepstreet-
     product('Beepstreet', 'Sunrizer', aumu('BSTR', 'SNRZ'), tags(
         'synth', 'subtractive',
@@ -426,6 +431,9 @@ INST = {
     # -Modwheel-
     product('Modwheel', 'Biscuit Tin Guitar', kontakt, tags(
         'kontakt', 'guitar', 'acoustic', 'plucked',
+    )),
+    product('Modwheel', 'Hum Drum', kontakt, tags(
+        'kontact', 'drums', 'accoustic', 'percussion',
     )),
     product('Modwheel', 'The Lowdown', kontakt, tags(
         'bass', 'strings', 'bow', 'acoustic', 'kontakt', 'upright',
@@ -735,6 +743,9 @@ INST = {
     )),
     product('Spitfire', 'Artisan Violins', kontakt, tags(
         'strings', 'violin', 'solo', 'acoustic', 'kontakt', 'bowed',
+    )),
+    product('Spitfire', 'EVO Grid 2: Strings', kontakt, tags(
+        'strings', 'kontakt', 'acoustic',
     )),
     product('Spitfire', 'Swarm Mandolins', kontakt, tags(
         'mandolin', 'solo', 'acoustic', 'kontakt',

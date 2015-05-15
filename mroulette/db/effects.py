@@ -328,6 +328,11 @@ FX = {
         t.DIST, 'distortion', 'special', 'multiband',
     )),
 
+    # -Glitchmachines-
+    product('Glitchmachines', 'Subvert', aumf('GlMa', 'GlSu'), tags(
+        t.DIST, t.FSU,
+    )),
+
     # -Goodhertz-
     product('Goodhertz', 'Faraday Limiter', aufx('GDHZ', 'FDLM'), tags(
         t.DYN, 'limiter', 'character',
