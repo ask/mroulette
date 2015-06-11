@@ -422,6 +422,9 @@ INST = {
     product('Max for Cats', 'Digital', live, tags(
         'digital', 'synth', 'additive', 'Live', 'maxforlive',
     )),
+    product('Max for Cats', 'Oscillot', live, tags(
+        'modular', 'synth', 'Live', 'maxforlive',
+    )),
 
     # -Modartt-
     product('Modartt', 'Pianoteq 5 PRO', aumu('Mdrt', 'Pt5q'), tags(
@@ -628,6 +631,11 @@ INST = {
     #    'synth', 'sid', 'digital', 'retro',
     #)),
 
+    # -Renoise-
+    product('Renoise', 'Redux', aumu('ReNS', 'RRDX'), tags(
+        'sampler', 'tracker',
+    )),
+
     # -Rhythmic Robot-
     product('Rhythmic Robot', 'Grit Kit', kontakt, tags(
         'kontakt', 'drums', 'electronic',
@@ -689,8 +697,11 @@ INST = {
     )),
 
     # -SoundDUST-
+    product('SoundDUST', 'Cloud Cello', kontakt, tags(
+        'kontakt', 'acoustic', 'strings', 'cello',
+    )),
     product('SoundDUST', 'Cloud Viola', kontakt, tags(
-        'kontakt', 'acoustic', 'strings',
+        'kontakt', 'acoustic', 'strings', 'viola',
     )),
     product('SoundDUST', 'Dulcitone 1884x2', kontakt, tags(
         'kontakt', 'acoustic', 'dulcitone', 'keys',

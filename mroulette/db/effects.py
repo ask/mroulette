@@ -164,6 +164,9 @@ FX = {
     product('Audio Damage', 'Discord3', aumf('AuDa', 'ADd3'), tags(
         t.GRAIN, 'delay', 'special', 'pitch',
     )),
+    product('Audio Damage', 'FuzzPlus3', aumf('AuDa', 'ADf3'), tags(
+        t.DIST, 'character', 'fuzz',
+    )),
     product('Audio Damage', 'Kombinat Dva', aufx('AuDa', 'ADkd'), tags(
         t.DIST, 'character', 'special', 'bitcrusher', 'waveshaper',
     )),
@@ -380,6 +383,12 @@ FX = {
     product('Ina-GRM', 'Freeze', aumf('Grm ', 'Free'), tags(
         t.GRM, 'special', 'granular',
     )),
+    product('Ina-GRM', 'FreqShift', aumf('Grm ', 'FrsG'), tags(
+        t.GRM, 'special', 'spectral',
+    )),
+    product('Ina-GRM', 'FreqWarp', aumf('Grm ', 'Fw G'), tags(
+        t.GRM, 'special', 'spectral',
+    )),
     product('Ina-GRM', 'Fusion', aumf('Grm ', 'GFus'), tags(
         t.GRM, 'special',
     )),
@@ -392,14 +401,17 @@ FX = {
     product('Ina-GRM', 'Reson', aumf('Grm ', 'Reso'), tags(
         t.GRM, 'special',
     )),
-    product('Ina-GRM', 'FreqShift', aumf('Grm ', 'FrsG'), tags(
-        t.GRM, 'special', 'spectral',
-    )),
     product('Ina-GRM', 'Shuffling', aumf('Grm ', 'Shuf'), tags(
         t.GRM, 'special', 'delay', 'sidechain',
     )),
-    product('Ina-GRM', 'FreqWarp', aumf('Grm ', 'Fw G'), tags(
-        t.GRM, 'special', 'spectral',
+    product('Ina-GRM', 'SpaceFilter', aumf('Grm ', 'GSFi'), tags(
+        t.GRM, 'special', t.FILT, t.IMAGE, 'surround',
+    )),
+    product('Ina-GRM', 'SpaceGrain', aumf('Grm ', 'GSGa'), tags(
+        t.GRM, 'special', t.GRAIN, t.IMAGE, 'surround',
+    )),
+    product('Ina-GRM', 'Spaces', aumf('Grm ', 'GrSp'), tags(
+        t.GRM, 'special', t.IMAGE, 'surround',
     )),
 
     # -IRCAM-
@@ -448,6 +460,9 @@ FX = {
     )),
     product('iZotope', 'RX 4 Hum Removal', aufx('iZtp', 'Zn4H'), tags(
         t.OTHER, 'special', 'creative', 'restoration',
+    )),
+    product('iZotope', 'Trash 2', aufx('iZtp', 'ZnT2'), tags(
+        t.DIST, 'special', 'creative', 'character',
     )),
     product('iZotope', 'Vinyl', aufx('iZtp', 'Vnyl'), tags(
         t.DIST, 'special', 'character', 'free',
