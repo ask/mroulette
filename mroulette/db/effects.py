@@ -157,6 +157,11 @@ FX = {
         'logic:distortion',
     )),
 
+    # -Audified-
+    product('Audified', 'U73b Compressor', aufx('AdFd', 'U73b'), tags(
+        t.COMP, 'character',
+    )),
+
     # -Audio Damage-
     product('Audio Damage', 'Bitcom', aumf('AuDa', 'ADbc'), tags(
         t.FSU, 'special', 'sequencer', 'bitcrusher', 'distortion',
@@ -340,6 +345,9 @@ FX = {
     product('Goodhertz', 'Faraday Limiter', aufx('GDHZ', 'FDLM'), tags(
         t.DYN, 'limiter', 'character',
     )),
+    product('Goodhertz', 'Lohi', aufx('GDHZ', 'LOHI'), tags(
+        t.FILT, 'character',
+    )),
     product('Goodhertz', 'Lossy', aufx('GDHZ', 'LSSY'), tags(
         t.DIST, 'special', 'character',
     )),
@@ -488,16 +496,16 @@ FX = {
     )),
 
     # -Klevgränd Produktion-
-    product('Klevgränd Produktion', 'R0Verb', aufx('Klev', 'rvrb'), tags(
+    product('Klevgrand Produktion', 'R0Verb', aufx('Klev', 'rvrb'), tags(
         t.VERB, 'special',
     )),
-    product('Klevgränd Produktion', 'SquashIt', aufx('Klev', 'Sqit'), tags(
+    product('Klevgrand Produktion', 'SquashIt', aufx('Klev', 'Sqit'), tags(
         t.DIST, 'character', 'multiband',
     )),
-    product('Klevgränd Produktion', 'Svep', aufx('Klev', 'modl'), tags(
+    product('Klevgrand Produktion', 'Svep', aufx('Klev', 'modl'), tags(
         t.MOD, 'phaser', 'flanger', 'chorus', 'free',
     )),
-    product('Klevgränd Produktion', 'Vandelay', aufx('Klev', 'dely'), tags(
+    product('Klevgrand Produktion', 'Vandelay', aufx('Klev', 'dely'), tags(
         t.DELAY, 'multiband', 'free',
     )),
 
@@ -627,14 +635,29 @@ FX = {
     product('Native Instruments', 'Driver', aufx('-NI-', 'Ni$='), tags(
         t.DIST, 'character', 'sidechain',
     )),
-    product('Native Instruments', 'Reaktor 5 FX', reaktorFX, tags(
-        t.STRIP, 'modular', 'sidechain',
+    product('Native Instruments', 'Enhanced EQ', aufx('-NI-', 'Ni$:'), tags(
+        t.EQ, 'character',
+    )),
+    product('Native Instruments', 'Guitar Rig 5', aumf('-NI-', 'NiG5'), tags(
+        t.AMP, 'guitar', 'strip', 'sidechain', t.AMP,
     )),
     product('Native Instruments', 'Molekular', reaktorFX, tags(
         t.CREATIVE, 'special', 'delay', 'vocoder', 'pitch', 'sidechain',
     )),
-    product('Native Instruments', 'Guitar Rig 5', aumf('-NI-', 'NiG5'), tags(
-        t.AMP, 'guitar', 'strip', 'sidechain', t.AMP,
+    product('Native Instruments', 'Passive EQ', aufx('-NI-', 'Ni$9'), tags(
+        t.EQ, 'character',
+    )),
+    product('Native Instruments', 'Reaktor 5 FX', reaktorFX, tags(
+        t.STRIP, 'modular', 'sidechain',
+    )),
+    product('Native Instruments', 'RC 24', aufx('-NI-', 'Ni$>'), tags(
+        t.VERB, 'character',
+    )),
+    product('Native Instruments', 'RC 48', aufx('-NI-', 'Ni$?'), tags(
+        t.VERB, 'character',
+    )),
+    product('Native Instruments', 'The Mouth', reaktorFX, tags(
+        t.FSU, 'special',
     )),
     #product('Native Instruments', 'Solid Bus Comp', aufx('-NI-', 'Ni$6'), tags(
     #    t.COMP, 'dynamics',
@@ -666,6 +689,9 @@ FX = {
     )),
     product('Native Instruments', 'VC 2A', aufx('-NI-', 'Ni$3'), tags(
         t.COMP, 'dynamics', 'la2a', 'teletronix', 'urei', 'opto', 'tube',
+    )),
+    product('Native Instruments', 'VC 76', aufx('-NI-', 'Ni$4'), tags(
+        t.COMP, 'dynamics', 'FET', '1176',
     )),
 
     # -Ohm Force-
@@ -881,6 +907,9 @@ FX = {
     # -Solid State Logic-
     product('Solid State Logic', 'SSL X-Saturator', aufx('SSL ', 'XSAT'), tags(
         t.SAT, 'analog', 'character',
+    )),
+    product('Solid State Logic', 'SSL X-Verb', aufx('_SSL', 'XVRB'), tags(
+        t.VERB,
     )),
 
     # -Sonic Charge-

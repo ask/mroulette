@@ -353,6 +353,12 @@ INST = {
         'drums', 'synth',
     )),
 
+    # -GForce-
+    product('GForce', 'impOSCar2', aumu('VST ', 'imp2'), tags(
+        'synth', 'VA', 'OSCar',
+    )),
+
+
     # -Goldbaby-
     product('Goldbaby', 'SP1200 Vol.2', kontakt, tags(
         'drums', 'sampled', 'SP1200', 'kontakt', 'battery', 'geist',
@@ -485,6 +491,9 @@ INST = {
     product('Native Instruments', 'Prism', reaktor, tags(
         'synth', 'physmod', 'reaktor',
     )),
+    product('Native Instruments', 'Razor', reaktor, tags(
+        'synth', 'additive', 'reaktor',
+    )),
     product('Native Instruments', 'Skanner XT', reaktor, tags(
         'synth', 'granular', 'morph', 'reaktor', 'special',
     )),
@@ -515,20 +524,114 @@ INST = {
     product('Native Instruments', 'Photone', reaktor, tags(
         'synth', 'digital',
     )),
-    product('Native Instruments', 'The Giant', kontakt, tags(
-        'piano', 'acoustic', 'kontakt', 'upright',
+    product('Native Instruments', 'Abbey Road 50s Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Abbey Road 60s Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Abbey Road 70s Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Abbey Road 80s Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Abbey Road Vintage Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Abbey Road Modern Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Action Strikes', kontakt, tags(
+        'cinematic', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Action Strings', kontakt, tags(
+        'cinematic', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Alicias Keys', kontakt, tags(
+        'piano', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Balinese Gamelan', kontakt, tags(
+        'gamelan', 'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Cuba', kontakt, tags(
+        'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Damage', kontakt, tags(
+        'cinematic', 'percussion', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Evolve', kontakt, tags(
+        'cinematic', 'kontakt',
+    )),
+    product('Native Instruments', 'Evolve Mutations', kontakt, tags(
+        'cinematic', 'kontakt',
+    )),
+    product('Native Instruments', 'Evolve Mutations II', kontakt, tags(
+        'cinematic', 'kontakt',
     )),
     product('Native Instruments', 'Drum Lab', kontakt, tags(
         'drums', 'acoustic', 'kontakt',
     )),
+    product('Native Instruments', 'George Duke Soul Treasures', kontakt, tags(
+        'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Kinetic Metal', kontakt, tags(
+        'cinematic', 'kontakt',
+    )),
+    product('Native Instruments', 'Machine Drum Selection', kontakt, tags(
+        'drums', 'synth', 'sampled', 'kontakt',
+    )),
+    product('Native Instruments', 'Retro Machines MK2', kontakt, tags(
+        'synth', 'analogue', 'kontakt',
+    )),
+    product('Native Instruments', 'Rise & Hit', kontakt, tags(
+        'cinematic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee Funk Guitarist', kontakt, tags(
+        'guitar', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee Jay Bass', kontakt, tags(
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
+    )),
     product('Native Instruments', 'Scarbee MM Bass', kontakt, tags(
-        'bass', 'electric', 'funk', 'kontakt',
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee MM Bass Amped', kontakt, tags(
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee Pre Bass', kontakt, tags(
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee Pre Bass Amped', kontakt, tags(
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Scarbee Rickenbacker Bass', kontakt, tags(
+        'bass', 'electric', 'funk', 'acoustic', 'kontakt',
     )),
     product('Native Instruments', 'Scarbee Vintage Keys', kontakt, tags(
         'Mark I', 'A-200', 'clavinet', 'pianet', 'electric', 'kontakt',
     )),
-    product('Native Instruments', 'Session Strings', kontakt, tags(
+    product('Native Instruments', 'Session Horns Pro', kontakt, tags(
+        'brass', 'ensemble',  'trombone', 'tenor sax', 'trumpet',
+        'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'Session Strings Pro', kontakt, tags(
         'strings', 'ensemble', 'acoustic', 'kontakt', 'bowed',
+    )),
+    product('Native Instruments', 'Studio Drummer', kontakt, tags(
+        'drums', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'The Gentleman', kontakt, tags(
+        'piano', 'upright', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'The Giant', kontakt, tags(
+        'piano', 'acoustic', 'kontakt', 'upright',
+    )),
+    product('Native Instruments', 'The Grandeur', kontakt, tags(
+        'piano', 'grand', 'acoustic', 'kontakt',
+    )),
+    product('Native Instruments', 'The Maverick', kontakt, tags(
+        'piano', 'grand', 'acoustic', 'kontakt',
     )),
     product('Native Instruments', 'Vintage Organs', kontakt, tags(
         'organ', 'hammond B3', 'hammond C3', 'hammond M3',
@@ -537,31 +640,6 @@ INST = {
     )),
     product('Native Instruments', 'West Africa', kontakt, tags(
         'drums', 'percussion', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'Studio Drummer', kontakt, tags(
-        'drums', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'Retro Machines MK2', kontakt, tags(
-        'synth', 'analogue', 'kontakt',
-    )),
-    product('Native Instruments', 'Abbey Road 60s Drummer', kontakt, tags(
-        'drums', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'Abbey Road Vintage Drummer', kontakt, tags(
-        'drums', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'Session Horns', kontakt, tags(
-        'brass', 'ensemble',  'trombone', 'tenor sax', 'trumpet',
-        'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'The Maverick', kontakt, tags(
-        'piano', 'grand', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'The Grandeur', kontakt, tags(
-        'piano', 'grand', 'acoustic', 'kontakt',
-    )),
-    product('Native Instruments', 'The Gentleman', kontakt, tags(
-        'piano', 'upright', 'acoustic', 'kontakt',
     )),
 
     # -New Sonic Arts-
@@ -886,6 +964,9 @@ INST = {
     product('Waldorf', 'PPG Wave 2.V', aumu('3E00', '2900'), tags(
         'synth', 'wavetable', 'digital',
     )),
+    product('Waldorf', 'PPG Wave 3.V', aumu('3E00', '2901'), tags(
+        'synth', 'wavetable', 'digital',
+    )),
 
     # -Wave Alchemy-
     product('Wave Alchemy', 'Digital Revolution', kontakt, tags(
@@ -924,7 +1005,7 @@ INST = {
     product('XILS Labs', 'PolyKB II', aumu('Xils', 'pKB2'), tags(
         'synth', 'analog', 'subtractive',
     )),
-    product('XILS Labs', 'Syn-X', aumu('Xils', 'XiSy'), tags(
+    product('XILS Labs', 'SynX2', aumu('Xils', 'XSy2'), tags(
         'synth', 'analog', 'subtractive',
     )),
     product('XILS Labs', 'XILS 3.2', aumu('Xils', 'XVc2'), tags(
