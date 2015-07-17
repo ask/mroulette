@@ -14,6 +14,11 @@ INST = {
         'drums', 'kontakt', 'acoustic', 'impulses',
     )),
 
+    # -AAS-
+    product('AAS', 'Chromaphone', aumu('AAS ', 'Chr1'), tags(
+        'synth', 'physmod', 'mallet', 'strings', 'bells',
+    )),
+
     # -Ableton-
     product('Ableton', 'Sampler', live, tags(
         'sampler',
@@ -110,6 +115,11 @@ INST = {
     )),
     product('Air', 'Xpand!2', aumu('Wzoo', 'WSL1'), tags(
         'rompler',
+    )),
+
+    # -AlyJamesLab-
+    product('AlyJamesLab', 'VLINN 2.0', aumu('AlyJ', 'VLn2'), tags(
+        'drum', 'synth', 'digital', 'linndrum',
     )),
 
     # -Amazing Noises-
@@ -738,6 +748,11 @@ INST = {
         'drums', 'synth', 'Live', 'maxforlive'
     )),
 
+    # -Softube-
+    product('Softube', 'Heartbeat', aumu('SfTb', 'r9z8'), tags(
+        'drum', 'synth', 'analog',
+    )),
+
     # -Sonic Charge-
     product('Sonic Charge', 'Microtonic', aumu('NuEd', 'NuMT'), tags(
         'drums', 'synth',
@@ -836,6 +851,12 @@ INST = {
     product('Spitfire', 'EVO Grid 2: Strings', kontakt, tags(
         'strings', 'kontakt', 'acoustic',
     )),
+    product('Spitfire', 'Sable Chamber Strings Vol1', kontakt, tags(
+        'strings', 'acoustic', 'kontakt', 'violin', 'cello',
+    )),
+    product('Spitfire', 'Sable Chamber Strings Vol4', kontakt, tags(
+        'strings', 'acoustic', 'kontakt', 'violin', 'cello', 'bass', 'viola',
+    )),
     product('Spitfire', 'Swarm Mandolins', kontakt, tags(
         'mandolin', 'solo', 'acoustic', 'kontakt',
     )),
@@ -875,6 +896,11 @@ INST = {
     # -Steinberg-
     product('Steinberg', 'Padshop Pro', aumu('Stbg', 'pads'), tags(
         'granular', 'synth', 'sampler',
+    )),
+
+    # -TAL-
+    product('TAL', 'TAL Sampler', aumu('TOGU', 'hEl1'), tags(
+        'sampler', 'lofi', 'creative',
     )),
 
     # -Twisted Tools-
@@ -988,14 +1014,6 @@ INST = {
     )),
     product('Wavesfactory', 'W-Buzz', kontakt, tags(
         'bass', 'special', 'snare', 'acoustic', 'kontakt',
-    )),
-
-    # -Xfer Records-
-    product('Xfer', 'Nerve', aumu('XFER', 'XFRa'), tags(
-        'drums', 'sampler',
-    )),
-    product('Xfer', 'Serum', aumu('XFER', 'XfsX'), tags(
-        'synth', 'digital', 'wavetable',
     )),
 
     # -XILS Labs-

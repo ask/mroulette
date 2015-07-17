@@ -35,6 +35,11 @@ FX = {
         t.GRAIN, 'special', 'mfx',
     )),
 
+    # -Acon Digital-
+    product('Acon Digital', 'Verberate', aufx('ACON', 'ACVR'), tags(
+        t.VERB, 'clean', 'digital',
+    )),
+
     # -Aegean Music-
     product('Aegean Music', 'Spirit Reverb', aumf('Aegn', 'Amsr'), tags(
         t.VERB, 'spring', 'special', t.AMP,
@@ -169,7 +174,7 @@ FX = {
     product('Audio Damage', 'Discord3', aumf('AuDa', 'ADd3'), tags(
         t.GRAIN, 'delay', 'special', 'pitch',
     )),
-    product('Audio Damage', 'FuzzPlus3', aumf('AuDa', 'ADf3'), tags(
+    product('Audio Damage', 'FuzzPlus3', aufx('AuDa', 'ADf3'), tags(
         t.DIST, 'character', 'fuzz',
     )),
     product('Audio Damage', 'Kombinat Dva', aufx('AuDa', 'ADkd'), tags(
@@ -180,7 +185,7 @@ FX = {
     product('Audio Ease', 'Altiverb 7', aufx('AEas', 'AVr5'), tags(
         t.VERB, 'delay', 'special',
     )),
-    product('Audio Ease', 'Speakerphone 2', aufx('AEas', 'SpVl'), tags(
+    product('Audio Ease', 'Speakerphone 2', aumf('AEas', 'SpVl'), tags(
         t.DIST, 'special', 'character', 'eq',
     )),
 
@@ -234,7 +239,7 @@ FX = {
     product('Eventide', 'Blackhole', aufx('TIDE', 'HOLE'), tags(
         t.CREATIVE, 'reverb', 'delay', 'special',
     )),
-    product('Eventide', 'H3000 Factory', aufx('TIDE', 'Fact'), tags(
+    product('Eventide', 'H3000 Factory', aumf('TIDE', 'Fact'), tags(
         t.DELAY, 'pitch', 'delay', 'special', 'sidechain',
     )),
     product('Eventide', 'Omnipressor', aufx('TIDE', 'Omni'), tags(
@@ -942,13 +947,13 @@ FX = {
     product('Soundhack', '+bubbler', aumf('SDHK', '+bub'), tags(
         t.GRAIN, 'delay', 'special',
     )),
-    product('Soundhack', '+chebyshev', aufx('SDHK', '+chb'), tags(
+    product('Soundhack', '++chebyshev', aufx('SDHK', '+2ch'), tags(
         t.CREATIVE, 'distortion', 'special',
     )),
-    #product('Soundhack', '+compand', aufx('SDHK', 'ercm'), tags(
+    #product('Soundhack', '++compand', aufx('SDHK', '+2cm'), tags(
     #    t.DYN, 'dynamics', 'free',
     #)),
-    product('Soundhack', '+decimate', aufx('SDHK', 'er10'), tags(
+    product('Soundhack', '++decimate', aufx('SDHK', '+210'), tags(
         t.DIST, 'character', 'bitcrusher', 'free',
     )),
     #product('Soundhack', '+delay', aumf('SDHK', '+dla'), tags(
@@ -957,13 +962,13 @@ FX = {
     #product('Soundhack', '+matrix', aufx('SDHK', '+mtx'), tags(
     #    'special', 'free',
     #)),
-    product('Soundhack', '+morphfilter', aumf('SDHK', '+mrf'), tags(
+    product('Soundhack', '++morphfilter', aufx('SDHK', '+mrf'), tags(
         t.FILT, 'spectral', 'special',
     )),
     product('Soundhack', '+phasemash (pvoc)', aumf('SDHK', '+pvx'), tags(
         t.CREATIVE, 'special',
     )),
-    #product('Soundhack', '+phasor', aumf('SDHK', '+phz'), tags(
+    #product('Soundhack', '++phasor', aumf('SDHK', '+2pz'), tags(
     #    t.MOD, 'special', 'phaser', 'free',
     #)),
     product('Soundhack', '+pitchdelay', aumf('SDHK', '+pdl'), tags(
@@ -975,10 +980,10 @@ FX = {
     product('Soundhack', '+pvocloop (pvoc)', aumf('SDHK', '+pvt'), tags(
         t.CREATIVE, 'special', 'granular', 'mfx',
     )),
-    product('Soundhack', '+spectralcompand', aumf('SDHK', '+spx'), tags(
+    product('Soundhack', '++spectralcompand', aufx('SDHK', '+2sc'), tags(
         t.CREATIVE, 'spectral', 'special', 'eq',
     )),
-    product('Soundhack', '+spectralgate', aumf('SDHK', '+spg'), tags(
+    product('Soundhack', '++spectralgate', aufx('SDHK', '+2sg'), tags(
         t.CREATIVE, 'spectral', 'special', 'dynamics', 'gate',
     )),
     product('Soundhack', '+spiralstretch (pvoc)', aumf('SDHK', '+pvm'), tags(
@@ -1080,6 +1085,12 @@ FX = {
     )),
     product('Unfiltered Audio', 'Sandman', aufx('UnAu', 'snDM'), tags(
         t.DELAY, 'special',
+    )),
+
+    # -UVI-
+    product('UVI', 'Relayer', aufx('UVI ', 'Rela'), tags(
+        t.DELAY, 'special', 'granular', 'modulation', 'comb', 'time',
+        'swing', 'lofi', 'character',
     )),
 
     # -Valhalla-
