@@ -191,51 +191,49 @@ INST = {
     product('Arturia', 'Analog Lab', aumu('Artu', 'ALab'), tags(
         t.ANALOG,
     )),
-    product('Arturia', 'ARP 2600 V2', aumu('Artu', 'arpW'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Arturia', 'CS-80 V2', aumu('ArTu', 'Cs82'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
+    #product('Arturia', 'ARP 2600 V2', aumu('Artu', 'arpW'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Arturia', 'CS-80 V2', aumu('ArTu', 'Cs82'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
     product('Arturia', 'Jupiter-8 V2', aumu('Artu', 'Ju82'), tags(
         t.ANALOG, t.SUBTRACTIVE,
     )),
-    product('Arturia', 'Matrix-12 V', aumu('Artu', 'Matr'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
+    #product('Arturia', 'Matrix-12 V', aumu('Artu', 'Matr'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
 
-    # XXX Crashing:
-    product('Arturia', 'Mini V', aumu('Artu', 'mini'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Arturia', 'Modular V', aumu('Artu', 'mmv2'), tags(
-        t.ANALOG, t.MODULAR,
-    )),
-    product('Arturia', 'Oberheim SEM V', aumu('Artu', 'ObsV'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Arturia', 'Prophet V2', aumu('Artu', 'P5V2'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Arturia', 'Solina V', aumu('Artu', 'Soli'), tags(
-        'organ', t.ANALOG,
-    )),
-    product('Arturia', 'Spark', aumu('Artu', 'ArDS'), tags(
-        t.DRUMS, t.ELECTRONIC,
-    )),
-    product('Arturia', 'Spark Dubstep', aumu('Artu', 'ArDD'), tags(
-        t.DRUMS, t.ELECTRONIC,
-    )),
-    product('Arturia', 'Spark Vintage', aumu('Artu', 'ArDV'), tags(
-        t.DRUMS, t.ELECTRONIC,
-    )),
-    product('Arturia', 'Vox V', aumu('Artu', 'VoxA'), tags(
-        'organ', t.ANALOG,
-    )),
-    # XXX Crashing:
-    product('Arturia', 'Wurlitzer V', aumu('Artu', 'WurV'), tags(
-        t.KEYS, t.ANALOG,
-    )),
+    #product('Arturia', 'Mini V', aumu('Artu', 'mini'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Arturia', 'Modular V', aumu('Artu', 'mmv2'), tags(
+    #    t.ANALOG, t.MODULAR,
+    #)),
+    #product('Arturia', 'Oberheim SEM V', aumu('Artu', 'ObsV'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Arturia', 'Prophet V2', aumu('Artu', 'P5V2'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Arturia', 'Solina V', aumu('Artu', 'Soli'), tags(
+    #    'organ', t.ANALOG,
+    #)),
+    #product('Arturia', 'Spark', aumu('Artu', 'ArDS'), tags(
+    #    t.DRUMS, t.ELECTRONIC,
+    #)),
+    #product('Arturia', 'Spark Dubstep', aumu('Artu', 'ArDD'), tags(
+    #    t.DRUMS, t.ELECTRONIC,
+    #)),
+    #product('Arturia', 'Spark Vintage', aumu('Artu', 'ArDV'), tags(
+    #    t.DRUMS, t.ELECTRONIC,
+    #)),
+    #product('Arturia', 'Vox V', aumu('Artu', 'VoxA'), tags(
+    #    'organ', t.ANALOG,
+    #)),
+    #product('Arturia', 'Wurlitzer V', aumu('Artu', 'WurV'), tags(
+    #    t.KEYS, t.ANALOG,
+    #)),
 
     # -Atom Hub-
     product('Atom Hub', 'A day in the park', kontakt, tags(
@@ -399,21 +397,21 @@ INST = {
     )),
 
     # -Korg-
-    product('Korg', 'M1', aumu('KORG', 'KLM1'), tags(
-        t.SYNTH, t.DIGITAL,
-    )),
-    product('Korg', 'Mono-poly', aumu('KORG', 'KLMP'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Korg', 'MS-20', aumu('KORG', 'KLMV'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Korg', 'Polysix', aumu('KORG', 'KLPV'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
-    product('Korg', 'Wavestation', aumu('KORG', 'KLWV'), tags(
-        t.DIGITAL, t.SYNTH, t.WAVETABLE,
-    )),
+    #product('Korg', 'M1', aumu('KORG', 'KLM1'), tags(
+    #    t.SYNTH, t.DIGITAL,
+    #)),
+    #product('Korg', 'Mono-poly', aumu('KORG', 'KLMP'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Korg', 'MS-20', aumu('KORG', 'KLMV'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Korg', 'Polysix', aumu('KORG', 'KLPV'), tags(
+    #    t.ANALOG, t.SUBTRACTIVE,
+    #)),
+    #product('Korg', 'Wavestation', aumu('KORG', 'KLWV'), tags(
+    #    t.DIGITAL, t.SYNTH, t.WAVETABLE,
+    #)),
 
     # -Loops De La Creme-
     product('Loops De La Creme', 'Bell Empire', kontakt, tags(
