@@ -69,6 +69,7 @@ class t(object):
     GUITAR = 'Guitar'
     KEYS = 'Keys'
     M4L = 'Max4Live'
+    MALLET = 'Mallet'
     MODULAR = 'Modular'
     MONO = 'Monosynth'
     PERC = 'Percussion'

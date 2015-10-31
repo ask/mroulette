@@ -197,9 +197,9 @@ INST = {
     #product('Arturia', 'CS-80 V2', aumu('ArTu', 'Cs82'), tags(
     #    t.ANALOG, t.SUBTRACTIVE,
     #)),
-    product('Arturia', 'Jupiter-8 V2', aumu('Artu', 'Ju82'), tags(
-        t.ANALOG, t.SUBTRACTIVE,
-    )),
+    #product('Arturia', 'Jupiter-8 V2', aumu('Artu', 'Ju82'), tags(
+    #   t.ANALOG, t.SUBTRACTIVE,
+    #),
     #product('Arturia', 'Matrix-12 V', aumu('Artu', 'Matr'), tags(
     #    t.ANALOG, t.SUBTRACTIVE,
     #)),
@@ -775,7 +775,10 @@ INST = {
 
     # -Soniccouture-
     product('Soniccouture', 'Array Mbira', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'kalimba',
+        t.KONTAKT, t.ACOUSTIC, 'kalimba', t.PLUCKED,
+    )),
+    product('Soniccouture', 'Bag of Tricks', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, 'kalimba', t.DRUMS, t.PERC, T.MALLET,
     )),
     product('Soniccouture', 'Giant Bass Tongue Drum', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.DRUMS, t.PERC, 'tuned',
@@ -796,7 +799,7 @@ INST = {
         t.DRUMS, t.ABLETON,
     )),
     product('Soniccouture', 'Vibraphone', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'vibraphone', t.PERC, 'tuned',
+        t.KONTAKT, t.ACOUSTIC, 'vibraphone', t.PERC, 'tuned', t.MALLET,
     )),
 
     # -Sonokinetic-
@@ -868,29 +871,32 @@ INST = {
         t.DRUMS, t.PERC, 'fx', 'pads', t.ACOUSTIC, t.SPECIAL,
     )),
 
-    # -Spitfire-
-    product('Spitfire', 'Artisan Cello', kontakt, tags(
+    # -Spitfire Audio-
+    product('Spitfire Audio', 'Artisan Cello', kontakt, tags(
         t.STRINGS, t.CELLO, t.SOLO, t.ACOUSTIC, t.KONTAKT, t.BOWED,
     )),
-    product('Spitfire', 'Artisan Violins', kontakt, tags(
+    product('Spitfire Audio', 'Artisan Violins', kontakt, tags(
         t.STRINGS, t.VIOLIN, t.SOLO, t.ACOUSTIC, t.KONTAKT, t.BOWED,
     )),
-    product('Spitfire', 'EVO Grid 2: Strings', kontakt, tags(
+    product('Spitfire Audio', 'EVO Grid 2: Strings', kontakt, tags(
         t.STRINGS, t.KONTAKT, t.ACOUSTIC,
     )),
-    product('Spitfire', 'Orstphone', kontakt, tags(
+    product('Spitfire Audio', 'Orstphone', kontakt, tags(
         'orstphone', t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
-    product('Spitfire', 'Sable Chamber Strings Vol1', kontakt, tags(
+    product('Spitfire Audio', 'Sable Chamber Strings Vol1', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO,
     )),
-    product('Spitfire', 'Sable Chamber Strings Vol4', kontakt, tags(
+    product('Spitfire Audio', 'Sable Chamber Strings Vol4', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
     )),
-    product('Spitfire', 'Sable Chamber Strings Ensembles', kontakt, tags(
+    product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, 'ensemble',
     )),
-    product('Spitfire', 'Swarm Mandolins', kontakt, tags(
+    product('Spitfire Audio', 'Swarm Harp', kontakt, tags(
+        'harp', t.SOLO, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire Audio', 'Swarm Mandolins', kontakt, tags(
         'mandolin', t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
 
