@@ -16,7 +16,7 @@ INST = {
 
     # -AAS-
     product('AAS', 'Chromaphone', aumu('AAS ', 'Chr1'), tags(
-        t.SYNTH, t.PHYSMOD, 'mallet', t.STRINGS, 'bells',
+        t.SYNTH, t.PHYSMOD, t.MALLET, t.STRINGS, t.BELL,
     )),
 
     # -Ableton-
@@ -36,7 +36,7 @@ INST = {
         t.SYNTH, t.KEYS,
     )),
     product('Ableton', 'Collision', live, tags(
-        t.SYNTH, t.PHYSMOD, t.PERC, 'mallet',
+        t.SYNTH, t.PHYSMOD, t.PERC, t.MALLET,
     )),
 
     # -Acousticsamples-
@@ -56,7 +56,7 @@ INST = {
         t.BASS, t.ACOUSTIC,
     )),
     product('Acousticsamples', 'TheUpright', uvi, tags(
-        t.BASS, t.ACOUSTIC,
+        t.BASS, t.ACOUSTIC, t.DOUBLEBASS,
     )),
     product('Acousticsamples', 'GD-6', uvi, tags(
         t.GUITAR, t.ACOUSTIC, t.PLUCKED,
@@ -68,16 +68,16 @@ INST = {
         t.GUITAR, t.ACOUSTIC, t.PLUCKED, 'telecaster',
     )),
     product('Acousticsamples', 'F Grand 278', uvi, tags(
-        t.PIANO, 'grand', t.ACOUSTIC,
+        t.PIANO, 'grand', t.ACOUSTIC, t.SOLD,
     )),
     product('Acousticsamples', 'Mark 79', uvi, tags(
-        'organ', t.ELECTRIC,
+        t.ORGAN, t.ELECTRIC, t.SOLD,
     )),
     product('Acousticsamples', 'Percussiv', uvi, tags(
-        t.DRUMS, t.PERC, t.ACOUSTIC,
+        t.DRUMS, t.PERC, t.ACOUSTIC, t.SOLD,
     )),
     product('Acousticsamples', 'UKU', uvi, tags(
-        'ukulele', t.ACOUSTIC, t.PLUCKED,
+        t.UKULELE, t.ACOUSTIC, t.PLUCKED,
     )),
 
     # -Admiral Quality-
@@ -105,7 +105,7 @@ INST = {
         t.KEYS,
     )),
     product('Air', 'theRiser', aumu('Wzoo', 'tRsr'), tags(
-        'fx', t.SPECIAL,
+        t.FX, t.SPECIAL,
     )),
     product('Air', 'Transfuser', aumu('Wzoo', 'Trfr'), tags(
         'loop', t.SAMPLER,
@@ -164,7 +164,7 @@ INST = {
         t.LOGIC, t.PHYSMOD, t.SYNTH, t.LOGIC_INST,
     )),
     product('Apple', 'EVOC 20 PS', logic, tags(
-        t.LOGIC, 'vocoder', t.DIGITAL, t.LOGIC_INST,
+        t.LOGIC, t.VOCODER, t.DIGITAL, t.LOGIC_INST,
     )),
     product('apple', 'EFM1', logic, tags(
         t.LOGIC, t.FM, t.DIGITAL, t.SYNTH, t.LOGIC_INST,
@@ -191,49 +191,49 @@ INST = {
     product('Arturia', 'Analog Lab', aumu('Artu', 'ALab'), tags(
         t.ANALOG,
     )),
-    #product('Arturia', 'ARP 2600 V2', aumu('Artu', 'arpW'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Arturia', 'CS-80 V2', aumu('ArTu', 'Cs82'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Arturia', 'Jupiter-8 V2', aumu('Artu', 'Ju82'), tags(
-    #   t.ANALOG, t.SUBTRACTIVE,
-    #),
-    #product('Arturia', 'Matrix-12 V', aumu('Artu', 'Matr'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
+    product('Arturia', 'ARP 2600 V2', aumu('Artu', 'arpW'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'CS-80 V2', aumu('ArTu', 'Cs82'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'Jupiter-8 V2', aumu('Artu', 'Ju82'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'Matrix-12 V', aumu('Artu', 'Matr'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
 
-    #product('Arturia', 'Mini V', aumu('Artu', 'mini'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Arturia', 'Modular V', aumu('Artu', 'mmv2'), tags(
-    #    t.ANALOG, t.MODULAR,
-    #)),
-    #product('Arturia', 'Oberheim SEM V', aumu('Artu', 'ObsV'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Arturia', 'Prophet V2', aumu('Artu', 'P5V2'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Arturia', 'Solina V', aumu('Artu', 'Soli'), tags(
-    #    'organ', t.ANALOG,
-    #)),
-    #product('Arturia', 'Spark', aumu('Artu', 'ArDS'), tags(
-    #    t.DRUMS, t.ELECTRONIC,
-    #)),
-    #product('Arturia', 'Spark Dubstep', aumu('Artu', 'ArDD'), tags(
-    #    t.DRUMS, t.ELECTRONIC,
-    #)),
-    #product('Arturia', 'Spark Vintage', aumu('Artu', 'ArDV'), tags(
-    #    t.DRUMS, t.ELECTRONIC,
-    #)),
-    #product('Arturia', 'Vox V', aumu('Artu', 'VoxA'), tags(
-    #    'organ', t.ANALOG,
-    #)),
-    #product('Arturia', 'Wurlitzer V', aumu('Artu', 'WurV'), tags(
-    #    t.KEYS, t.ANALOG,
-    #)),
+    product('Arturia', 'Mini V', aumu('Artu', 'mini'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'Modular V', aumu('Artu', 'mmv2'), tags(
+        t.ANALOG, t.MODULAR, t.SOLD,
+    )),
+    product('Arturia', 'Oberheim SEM V', aumu('Artu', 'ObsV'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'Prophet V2', aumu('Artu', 'P5V2'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Arturia', 'Solina V', aumu('Artu', 'Soli'), tags(
+        'organ', t.ANALOG, t.SOLD,
+    )),
+    product('Arturia', 'Spark', aumu('Artu', 'ArDS'), tags(
+        t.DRUMS, t.ELECTRONIC, t.SOLD,
+    )),
+    product('Arturia', 'Spark Dubstep', aumu('Artu', 'ArDD'), tags(
+        t.DRUMS, t.ELECTRONIC, t.SOLD,
+    )),
+    product('Arturia', 'Spark Vintage', aumu('Artu', 'ArDV'), tags(
+        t.DRUMS, t.ELECTRONIC, t.SOLD,
+    )),
+    product('Arturia', 'Vox V', aumu('Artu', 'VoxA'), tags(
+        'organ', t.ANALOG, t.SOLD,
+    )),
+    product('Arturia', 'Wurlitzer V', aumu('Artu', 'WurV'), tags(
+        t.KEYS, t.ANALOG, t.SOLD,
+    )),
 
     # -Atom Hub-
     product('Atom Hub', 'A day in the park', kontakt, tags(
@@ -243,7 +243,7 @@ INST = {
         t.KONTAKT, t.GUITAR, t.ACOUSTIC, t.PLUCKED,
     )),
     product('Atom Hub', 'Harmogeddon', kontakt, tags(
-        t.KONTAKT, 'harmonica', t.ACOUSTIC,
+        t.KONTAKT, t.HARMONICA, t.ACOUSTIC,
     )),
     product('Atom Hub', 'Old Mandolin v2', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC,
@@ -262,14 +262,14 @@ INST = {
     product('Audio Damage', 'Phosphor', aumu('AuDa', 'ADph'), tags(
         t.SYNTH, t.ADDITIVE,
     )),
-    #product('Audio Damage', 'Tattoo', aumu('AuDa', 'Tatt'), tags(
-    #    t.DRUMS, t.SYNTH,
-    #)),
+    product('Audio Damage', 'Tattoo', aumu('AuDa', 'Tatt'), tags(
+        t.DRUMS, t.SYNTH, t.SOLD,
+    )),
 
     # -Audio Realism-
-    #product('Audio Realism', 'ABL2x', aumu('AuRe', 'abl3'), tags(
-    #    t.SYNTH, t.SUBTRACTIVE, '303',
-    #)),
+    product('Audio Realism', 'ABL2x', aumu('AuRe', 'abl3'), tags(
+        t.SYNTH, t.SUBTRACTIVE, '303', t.SOLD,
+    )),
     product('Audio Realism', 'ADMx', aumu('AuRe', 'aadm'), tags(
         t.DRUMS, t.SYNTH, '606', '808', '909',
     )),
@@ -282,7 +282,7 @@ INST = {
         t.KONTAKT, t.ACOUSTIC,
     )),
     product('Audiothing', 'miniBit', aumu('AdTg', 'mIbt'), tags(
-        t.SYNTH, 'chip', t.SUBTRACTIVE,
+        t.SYNTH, t.CHIP, t.SUBTRACTIVE,
     )),
 
     # -Audiowarp-
@@ -297,7 +297,7 @@ INST = {
 
     # -Bolder Sounds-
     product('Bolder Sounds', 'Harmoniums of the Opera', kontakt, tags(
-        'harmonium', t.KONTAKT, t.ACOUSTIC,
+        t.HARMONIUM, t.KONTAKT, t.ACOUSTIC,
     )),
 
     # -Camel Audio-
@@ -318,10 +318,10 @@ INST = {
 
     # -Elektron-
     product('Elektron', 'Analog Keys', aumu('ELEK', 'ELAK'), tags(
-        'editor', t.SYNTH, t.ANALOG,
+        t.EDITOR, t.SYNTH, t.ANALOG,
     )),
     product('Elektron', 'Analog Rytm', aumu('ELEK', 'ELAR'), tags(
-        'editor', 'drum', t.SYNTH, t.ANALOG, t.SAMPLER,
+        t.EDITOR, t.DRUMS, t.SYNTH, t.ANALOG, t.SAMPLER,
     )),
 
     # -Expert Sleepers-
@@ -346,12 +346,12 @@ INST = {
 
     # -Fluffy Audio-
     product('Fluffy Audio', 'Simple Flute', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'flute', 'free',
+        t.KONTAKT, t.ACOUSTIC, t.FLUTE, t.FREE,
     )),
 
     # -FXpansion-
     product('FXpansion', 'Amber', aumu('FXPN', 'AMBR'), tags(
-        t.ANALOG, t.STRINGS, 'ensemble',
+        t.ANALOG, t.STRINGS, t.ENSEMBLE,
     )),
     product('FXpansion', 'Cypher', aumu('FXPN', 'CYPH'), tags(
         t.ANALOG, t.FM,
@@ -374,10 +374,10 @@ INST = {
 
     # -Goldbaby-
     product('Goldbaby', 'SP1200 Vol.2', kontakt, tags(
-        t.DRUMS, t.SAMPLED, 'SP1200', t.KONTAKT, 'battery', 'geist',
+        t.DRUMS, t.SAMPLED, 'SP1200', t.KONTAKT, t.BATTERY, t.GEIST,
     )),
     product('Goldbaby', 'Urban Cookbook Vol.3', kontakt, tags(
-        t.DRUMS, t.SAMPLED, t.KONTAKT, 'battery', 'geist',
+        t.DRUMS, t.SAMPLED, t.KONTAKT, t.BATTERY, t.GEIST,
     )),
 
     # -IRCAM-
@@ -397,21 +397,21 @@ INST = {
     )),
 
     # -Korg-
-    #product('Korg', 'M1', aumu('KORG', 'KLM1'), tags(
-    #    t.SYNTH, t.DIGITAL,
-    #)),
-    #product('Korg', 'Mono-poly', aumu('KORG', 'KLMP'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Korg', 'MS-20', aumu('KORG', 'KLMV'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Korg', 'Polysix', aumu('KORG', 'KLPV'), tags(
-    #    t.ANALOG, t.SUBTRACTIVE,
-    #)),
-    #product('Korg', 'Wavestation', aumu('KORG', 'KLWV'), tags(
-    #    t.DIGITAL, t.SYNTH, t.WAVETABLE,
-    #)),
+    product('Korg', 'M1', aumu('KORG', 'KLM1'), tags(
+        t.SYNTH, t.DIGITAL, t.SOLD,
+    )),
+    product('Korg', 'Mono-poly', aumu('KORG', 'KLMP'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Korg', 'MS-20', aumu('KORG', 'KLMV'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Korg', 'Polysix', aumu('KORG', 'KLPV'), tags(
+        t.ANALOG, t.SUBTRACTIVE, t.SOLD,
+    )),
+    product('Korg', 'Wavestation', aumu('KORG', 'KLWV'), tags(
+        t.DIGITAL, t.SYNTH, t.WAVETABLE, t.SOLD,
+    )),
 
     # -Loops De La Creme-
     product('Loops De La Creme', 'Bell Empire', kontakt, tags(
@@ -464,13 +464,13 @@ INST = {
         t.KONTAKT, t.DRUMS, t.ACOUSTIC, t.PERC,
     )),
     product('Modwheel', 'The Lowdown', kontakt, tags(
-        t.BASS, t.STRINGS, t.BOWED, t.ACOUSTIC, t.KONTAKT, 'upright',
+        t.BASS, t.STRINGS, t.BOWED, t.ACOUSTIC, t.KONTAKT, t.DOUBLEBASS,
         t.PLUCKED, t.BOWED,
     )),
 
     # -MOTU-
     product('MOTU', 'MachFive3', aumu('MOTU', 'MCH3'), tags(
-        t.SAMPLER, t.GRAIN, 'stretch', 'IRCAM',
+        t.SAMPLER, t.GRAIN, 'stretch', 'IRCAM', t.SOLD,
     )),
 
     # -Native Instruments-
@@ -481,7 +481,7 @@ INST = {
         t.DRUMS, t.SAMPLER,
     )),
     product('Native Instruments', 'FM8', aumu('-NI-', 'Nif8'), tags(
-        t.FM, t.DIGITAL, 'retro',
+        t.FM, t.DIGITAL, t.LOFI,
     )),
     product('Native Instruments', 'Kontakt 5', aumu('-NI-', 'NiO5'), tags(
         t.SAMPLER,
@@ -568,10 +568,10 @@ INST = {
         t.CINEMATIC, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Native Instruments', 'Action Strings', kontakt, tags(
-        t.CINEMATIC, t.ACOUSTIC, t.KONTAKT,
+        t.CINEMATIC, t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Alicias Keys', kontakt, tags(
-        t.PIANO, t.ACOUSTIC, t.KONTAKT,
+        t.PIANO, t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Balinese Gamelan', kontakt, tags(
         'gamelan', t.PERC, t.ACOUSTIC, t.KONTAKT,
@@ -580,22 +580,22 @@ INST = {
         t.PERC, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Native Instruments', 'Damage', kontakt, tags(
-        t.CINEMATIC, t.PERC, t.ACOUSTIC, t.KONTAKT,
+        t.CINEMATIC, t.PERC, t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Evolve', kontakt, tags(
-        t.CINEMATIC, t.KONTAKT,
+        t.CINEMATIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Evolve Mutations', kontakt, tags(
-        t.CINEMATIC, t.KONTAKT,
+        t.CINEMATIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Evolve Mutations II', kontakt, tags(
-        t.CINEMATIC, t.KONTAKT,
+        t.CINEMATIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Drum Lab', kontakt, tags(
         t.DRUMS, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Native Instruments', 'George Duke Soul Treasures', kontakt, tags(
-        t.ACOUSTIC, t.KONTAKT,
+        t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Kinetic Metal', kontakt, tags(
         t.CINEMATIC, t.KONTAKT,
@@ -604,10 +604,10 @@ INST = {
         t.DRUMS, t.SYNTH, t.SAMPLED, t.KONTAKT,
     )),
     product('Native Instruments', 'Retro Machines MK2', kontakt, tags(
-        t.SYNTH, t.ANALOG, t.KONTAKT,
+        t.SYNTH, t.ANALOG, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Rise & Hit', kontakt, tags(
-        t.CINEMATIC, t.KONTAKT,
+        t.CINEMATIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Scarbee Funk Guitarist', kontakt, tags(
         t.GUITAR, t.ACOUSTIC, t.KONTAKT,
@@ -632,36 +632,38 @@ INST = {
     )),
     product('Native Instruments', 'Scarbee Vintage Keys', kontakt, tags(
         'Mark I', 'A-200', 'clavinet', 'pianet', t.ELECTRIC, t.KONTAKT,
+        t.DISABLED,
     )),
     product('Native Instruments', 'Session Horns Pro', kontakt, tags(
-        'brass', 'ensemble',  'trombone', 'tenor sax', 'trumpet',
+        t.BRASS, t.ENSEMBLE,  t.TROMBONE, t.TENOR, t.SAX, t.TRUMPET,
         t.ACOUSTIC, t.KONTAKT,
     )),
     product('Native Instruments', 'Session Strings Pro', kontakt, tags(
         t.STRINGS, 'ensemble', t.ACOUSTIC, t.KONTAKT, t.BOWED,
+        t.DISABLED,
     )),
     product('Native Instruments', 'Studio Drummer', kontakt, tags(
         t.DRUMS, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Native Instruments', 'The Gentleman', kontakt, tags(
-        t.PIANO, 'upright', t.ACOUSTIC, t.KONTAKT,
+        t.PIANO, 'upright', t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'The Giant', kontakt, tags(
-        t.PIANO, t.ACOUSTIC, t.KONTAKT, 'upright',
+        t.PIANO, t.ACOUSTIC, t.KONTAKT, 'upright', t.DISABLED,
     )),
     product('Native Instruments', 'The Grandeur', kontakt, tags(
-        t.PIANO, 'grand', t.ACOUSTIC, t.KONTAKT,
+        t.PIANO, 'grand', t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'The Maverick', kontakt, tags(
-        t.PIANO, 'grand', t.ACOUSTIC, t.KONTAKT,
+        t.PIANO, 'grand', t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'Vintage Organs', kontakt, tags(
-        'organ', 'hammond B3', 'hammond C3', 'hammond M3',
+        t.ORGAN, 'hammond B3', 'hammond C3', 'hammond M3',
         'vox continental ii', 'farfisa compact',
-        t.ELECTRIC, t.ACOUSTIC, t.KONTAKT,
+        t.ELECTRIC, t.ACOUSTIC, t.KONTAKT, t.DISABLED,
     )),
     product('Native Instruments', 'West Africa', kontakt, tags(
-        t.DRUMS, t.PERC, t.ACOUSTIC, t.KONTAKT,
+        t.DRUMS, t.PERC, t.ACOUSTIC, t.KONTAKT, t.KALIMBA,
     )),
 
     # -New Sonic Arts-
@@ -682,32 +684,48 @@ INST = {
 
     # -Orange Tree-
     product('Orange Tree', 'Angelic Harp', kontakt, tags(
-        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, 'harp',
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.HARP,
+    )),
+    product('Orange Tree', 'Angelic Chimes', kontakt, tags(
+        t.ACOUSTIC, t.KONTAKT, t.CHIMES,
     )),
     product('Orange Tree', 'Angelic Zither', kontakt, tags(
-        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, 'zither',
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.ZITHER,
     )),
-    product('Orange Tree', 'EAG - Steel Strings', kontakt, tags(
+    product('Orange Tree', 'CoreBass Pear', kontakt, tags(
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.DOUBLEBASS,
+    )),
+    product('Orange Tree', 'EAG - Steel Strings KP', kontakt, tags(
         t.GUITAR, t.PLUCKED, t.ACOUSTIC,
     )),
-    product('Orange Tree', 'EEG - Stratosphere', kontakt, tags(
-        t.GUITAR, t.PLUCKED, t.ELECTRIC, 'stratocaster',
-    )),
     product('Orange Tree', 'Grand Kalimba', kontakt, tags(
-        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, 'kalimba',
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.KALIMBA,
+    )),
+    product('Orange Tree', 'Tiny Box', kontakt, tags(
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.MUSICBOX,
+    )),
+
+    # -Origins of Audio-
+    product('Origins of Audio', 'Dark Kalimba', kontakt, tags(
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.KALIMBA,
     )),
 
     # -Plogue-
     product('Plogue', 'chipsounds', aumu('PLOG', 'PLGO'), tags(
-        t.SYNTH, 'chip', t.DIGITAL,
+        t.SYNTH, t.CHIP, t.DIGITAL,
     )),
     product('Plogue', 'chipspeech', aumu('PLOG', 'PLGS'), tags(
-        t.VOCAL, 'chip', t.SPECIAL,
+        t.VOCAL, t.CHIP, t.SPECIAL,
     )),
 
     # -Pluginboutique-
     product('Pluginboutique', 'VirtualCZ', aumu('pibT', 'vcz1'), tags(
         t.SYNTH, t.PHASEDIST, t.DIGITAL,
+    )),
+
+    # -PPG-
+    product('PPG', 'Phonem', aumu('PpgW', 'Phnm'), tags(
+        t.VOCAL, t.SYNTH, t.WAVETABLE,
     )),
 
     # -Prodyon-
@@ -723,13 +741,13 @@ INST = {
 
     # -Psound-
     product('Psound', 'Vintage Accordion', uvi, tags(
-        'accordion', t.ACOUSTIC,
+        t.ACCORDION, t.ACOUSTIC,
     )),
 
     # -ReFX-
-    #product('ReFX', 'QuadraSID', aumu('reFX', 'QSID'), tags(
-    #    t.SYNTH, 'sid', t.DIGITAL, 'retro',
-    #)),
+    product('ReFX', 'QuadraSID', aumu('reFX', 'QSID'), tags(
+        t.SYNTH, 'sid', t.DIGITAL, t.LOFI, t.CHIP, t.DISABLED,
+    )),
 
     # -Renoise-
     product('Renoise', 'Redux', aumu('ReNS', 'RRDX'), tags(
@@ -775,16 +793,22 @@ INST = {
 
     # -Soniccouture-
     product('Soniccouture', 'Array Mbira', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'kalimba', t.PLUCKED,
+        t.KONTAKT, t.ACOUSTIC, t.KALIMBA, t.PLUCKED,
     )),
     product('Soniccouture', 'Bag of Tricks', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'kalimba', t.DRUMS, t.PERC, T.MALLET,
+        t.KONTAKT, t.ACOUSTIC, t.KALIMBA, t.DRUMS, t.PERC, t.MALLET,
+    )),
+    product('Soniccouture', 'EP73 Deconstructed', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, t.KEYS, t.ELECTRIC, t.TINES,
     )),
     product('Soniccouture', 'Giant Bass Tongue Drum', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, t.DRUMS, t.PERC, 'tuned',
+        t.KONTAKT, t.ACOUSTIC, t.DRUMS, t.PERC, t.TUNED,
     )),
-    product('Soniccouture', 'The Hammersmith PRO', kontakt, tags(
-        t.KONTAKT, t.PIANO, t.ACOUSTIC,
+    product('Soniccouture', 'Glass Works', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, t.PERC, t.MALLET,
+    )),
+    product('Soniccouture', 'Grand Marimba', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, t.MARIMBA, t.PERC, t.TUNED, t.MALLET,
     )),
     product('Soniccouture', 'KIM', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.PLUCKED,
@@ -798,8 +822,26 @@ INST = {
     product('Soniccouture', 'Konkrete Drums 3', live, tags(
         t.DRUMS, t.ABLETON,
     )),
+    product('Soniccouture', 'Novachord', kontakt, tags(
+        t.KONTAKT, t.SYNTH, t.ANALOG, t.SAMPLED, t.SPECIAL,
+    )),
+    product('Soniccouture', 'Ondes', kontakt, tags(
+        t.KONTAKT, t.SYNTH, t.ANALOG, t.SAMPLED, t.SPECIAL,
+    )),
+    product('Soniccouture', 'Ondioline', kontakt, tags(
+        t.KONTAKT, t.SYNTH, t.ANALOG, t.SAMPLED, t.SPECIAL,
+    )),
+    product('Soniccouture', 'Pan Drums', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, t.PERC, t.MALLET,
+    )),
+    product('Soniccouture', 'The Conservatoire Collection', kontakt, tags(
+        t.KONTAKT, t.HARPSICHORD, t.ACOUSTIC, t.PERC, t.PLUCKED,
+    )),
+    product('Soniccouture', 'The Hammersmith PRO', kontakt, tags(
+        t.KONTAKT, t.PIANO, t.ACOUSTIC,
+    )),
     product('Soniccouture', 'Vibraphone', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'vibraphone', t.PERC, 'tuned', t.MALLET,
+        t.KONTAKT, t.ACOUSTIC, t.VIBRAPHONE, t.PERC, t.TUNED, t.MALLET,
     )),
 
     # -Sonokinetic-
@@ -815,22 +857,25 @@ INST = {
         t.KONTAKT, t.ACOUSTIC, t.STRINGS, t.VIOLA,
     )),
     product('SoundDUST', 'Dulcitone 1884x2', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'dulcitone', t.KEYS,
+        t.KONTAKT, t.ACOUSTIC, t.DULCITONE, t.KEYS,
     )),
     product('SoundDUST', 'Dulcitone 1900x2', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'dulcitone', t.KEYS,
+        t.KONTAKT, t.ACOUSTIC, t.DULCITONE, t.KEYS,
+    )),
+    product('SoundDUST', 'Flutter EP', kontakt, tags(
+        t.KONTAKT, t.KEYS,
     )),
     product('SoundDUST', 'Ghost Dulcitone 1900', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'dulcitone', t.KEYS, t.SPECIAL,
+        t.KONTAKT, t.ACOUSTIC, t.DULCITONE, t.KEYS, t.SPECIAL,
     )),
     product('SoundDUST', 'GrandThrift AutoHarp2', kontakt, tags(
-        t.KONTAKT, t.ACOUSTIC, 'autoharp', t.SPECIAL,
+        t.KONTAKT, t.ACOUSTIC, t.AUTOHARP, t.SPECIAL,
     )),
     product('SoundDUST', 'Hammr+', kontakt, tags(
-        t.KONTAKT, 'hammond',
+        t.KONTAKT, 'hammond', t.ORGAN,
     )),
     product('SoundDUST', 'Hammr Growler', kontakt, tags(
-        t.KONTAKT, 'hammond',
+        t.KONTAKT, 'hammond', t.ORGAN,
     )),
     product('SoundDUST', 'idstrument suite', kontakt, tags(
         'div', t.KONTAKT, t.DRUMS, t.SYNTH, t.GUITAR,
@@ -867,8 +912,11 @@ INST = {
     )),
 
     # -Spaectrum Arts-
+    product('Spaectrum Arts', 'Percussion Hits', kontakt, tags(
+        t.PERC, t.FX, t.ACOUSTIC, t.SPECIAL,
+    )),
     product('Spaectrum Arts', 'The Container', kontakt, tags(
-        t.DRUMS, t.PERC, 'fx', 'pads', t.ACOUSTIC, t.SPECIAL,
+        t.DRUMS, t.PERC, t.FX, t.ACOUSTIC, t.SPECIAL,
     )),
 
     # -Spitfire Audio-
@@ -878,34 +926,61 @@ INST = {
     product('Spitfire Audio', 'Artisan Violins', kontakt, tags(
         t.STRINGS, t.VIOLIN, t.SOLO, t.ACOUSTIC, t.KONTAKT, t.BOWED,
     )),
+    product('Spitfire Audio', 'Chrysalis', kontakt, tags(
+        t.HARP, t.PLUCKED, t.SOLO, t.ACOUSTIC, t.KONTAKT, t.BOWED, t.SPECIAL,
+    )),
     product('Spitfire Audio', 'EVO Grid 2: Strings', kontakt, tags(
         t.STRINGS, t.KONTAKT, t.ACOUSTIC,
     )),
+    product('Spitfire Audio', 'Olafur Arnalds Evolutions', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.VIOLA, t.BASS,
+    )),
     product('Spitfire Audio', 'Orstphone', kontakt, tags(
-        'orstphone', t.SOLO, t.ACOUSTIC, t.KONTAKT,
+        'orstphone', t.IDIOPHONE, t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Spitfire Audio', 'Sable Chamber Strings Vol1', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO,
+    )),
+    product('Spitfire Audio', 'Sable Chamber Strings Vol3', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
     )),
     product('Spitfire Audio', 'Sable Chamber Strings Vol4', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
     )),
     product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, 'ensemble',
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.ENSEMBLE,
+    )),
+    product('Spitfire Audio', 'Sacconi Quartet Vol1', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
     )),
     product('Spitfire Audio', 'Swarm Harp', kontakt, tags(
-        'harp', t.SOLO, t.ACOUSTIC, t.KONTAKT,
+        t.HARP, t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Spitfire Audio', 'Swarm Mandolins', kontakt, tags(
-        'mandolin', t.SOLO, t.ACOUSTIC, t.KONTAKT,
+        t.MANDOLIN, t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
 
     # -Spitfire LABS-
+    product('Spitfire LABS', 'Bedlam Piano', kontakt, tags(
+        t.PIANO, t.ACOUSTIC, t.KONTAKT,
+    )),
     product('Spitfire LABS', 'Bike Bells', kontakt, tags(
         'bell', t.ACOUSTIC, t.KONTAKT,
     )),
+    product('Spitfire LABS', 'Drums', kontakt, tags(
+        t.DRUMS, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Fingered Dulcimer', kontakt, tags(
+        t.PLUCKED, t.DULCIMER, t.ACOUSTIC, t.KONTAKT,
+    )),
     product('Spitfire LABS', 'Hamster Cage', kontakt, tags(
         t.PERC, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Harmonic Piano', kontakt, tags(
+        t.PIANO, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Henson\'s Frozen Strings', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Spitfire LABS', 'Kalimba', kontakt, tags(
         'kalimba', t.ACOUSTIC, t.KONTAKT,
@@ -922,14 +997,38 @@ INST = {
     product('Spitfire LABS', 'Metal Fan', kontakt, tags(
         'tuned', t.PERC, t.ACOUSTIC, t.KONTAKT,
     )),
+    product('Spitfire LABS', 'Mini Harp', kontakt, tags(
+        t.HARP, t.PLUCKED, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Music Box', kontakt, tags(
+        t.PLUCKED, t.ACOUSTIC, t.KONTAKT, t.MUSICBOX,
+    )),
+    product('Spitfire LABS', 'Nylon Guitar', kontakt, tags(
+        t.PLUCKED, t.GUITAR, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Office Lightshades', kontakt, tags(
+        t.TUNED, t.PERC, t.ACOUSTIC, t.KONTAKT,
+    )),
     product('Spitfire LABS', 'Peel Guitar', kontakt, tags(
         t.GUITAR, t.ELECTRIC, t.ACOUSTIC, t.KONTAKT, t.PLUCKED,
+    )),
+    product('Spitfire LABS', 'Plastic Pipes', kontakt, tags(
+        t.TUNED, t.PERC, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Spitfire LABS', 'Plucked Piano', kontakt, tags(
         t.PIANO, t.PLUCKED, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Spitfire LABS', 'Scary Strings', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, 'eerie', t.BOWED,
+    )),
+    product('Spitfire LABS', 'Small Pan', kontakt, tags(
+        t.IDIOPHONE, t.TUNED, t.MALLET, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Thundervox', kontakt, tags(
+        t.VOCAL, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Spitfire LABS', 'Trumpet Fiddle', kontakt, tags(
+        t.STRINGS, t.BOWED, t.ACOUSTIC, t.KONTAKT,
     )),
 
     # -Steinberg-
@@ -939,7 +1038,7 @@ INST = {
 
     # -TAL-
     product('TAL', 'TAL Sampler', aumu('TOGU', 'hEl1'), tags(
-        t.SAMPLER, 'lofi', t.CREATIVE,
+        t.SAMPLER, t.LOFI, t.CREATIVE,
     )),
 
     # -Twisted Tools-
@@ -964,10 +1063,10 @@ INST = {
         t.SYNTH, t.DIGITAL, t.SUBTRACTIVE, t.SPECIAL,
     )),
     product('u-he', 'Podolski', aumu('UHfX', 'Podo'), tags(
-        t.DIGITAL, 'free',
+        t.DIGITAL, t.FREE, t.DISABLED,
     )),
     product('u-he', 'Triple Cheese', aumu('UHfX', 'cbSy'), tags(
-        t.DIGITAL, 'free',
+        t.DIGITAL, t.FREE, t.DISABLED,
     )),
 
     # -Utami-
@@ -982,26 +1081,30 @@ INST = {
     product('UVI', 'Electric Toy Museum', uvi, tags(
         t.SAMPLED,
     )),
+    product('UVI', 'Falcon', aumu('UVI ', 'Flcn'), tags(
+        t.GRAIN, t.SYNTH, t.SAMPLER, t.DIGITAL, t.ANALOG, t.WAVETABLE,
+    )),
     product('UVI', 'IRCAM Prepared Piano', uvi, tags(
         t.PIANO, t.ACOUSTIC, t.SPECIAL, 'avant', 'IRCAM',
     )),
     product('UVI', 'IRCAM Solo Strings', uvi, tags(
-        'flute', 'oboe', 'clarinet', 'bassoon', 'trumpet',
-        'alto saxophone', 'french horn', 'trombone', 'bass tuba',
-        'accordion', t.GUITAR, 'harp', t.VIOLIN, t.VIOLA, 'violincello',
-        'contrabass', t.ACOUSTIC, t.SPECIAL, 'avant', 'IRCAM', t.BOWED,
+        t.FLUTE, 'oboe', 'clarinet', 'bassoon', t.TRUMPET,
+        'alto saxophone', 'french horn', t.TROMBONE, 'bass tuba', t.CHIP,
+        t.ACCORDION, t.GUITAR, t.HARP, t.VIOLIN, t.VIOLA, 'violincello',
+        t.DOUBLEBASS, t.ACOUSTIC, t.SPECIAL, 'avant', 'IRCAM', t.BOWED,
+        t.CHIP, t.SOLD,
     )),
     product('UVI', 'Digital Synsations', uvi, tags(
         t.DIGITAL, t.SYNTH, t.SAMPLED,
     )),
     product('UVI', 'Emulation One', uvi, tags(
-        t.DIGITAL, 'retro', t.SAMPLED,
+        t.DIGITAL, t.LOFI, t.SAMPLED,
     )),
     product('UVI', 'Grand Piano Model D', uvi, tags(
         t.PIANO, t.SAMPLED,
     )),
     product('UVI', 'Mello', uvi, tags(
-        'retro', t.SAMPLED,
+        t.LOFI, t.SAMPLED,
     )),
     product('UVI', 'MachFive3 Biosphere', uvi, tags(
         t.SYNTH, t.DRUMS, 'atmo', t.SAMPLED,
@@ -1035,23 +1138,29 @@ INST = {
 
     # -Wave Alchemy-
     product('Wave Alchemy', 'Digital Revolution', kontakt, tags(
-        t.DRUMS, t.SAMPLED, t.KONTAKT,
+        t.DRUMS, t.SAMPLED, t.KONTAKT, t.SOLD,
     )),
     product('Wave Alchemy', 'Revolution-606', kontakt, tags(
         t.DRUMS, '606', t.SAMPLED, t.KONTAKT,
     )),
     product('Wave Alchemy', 'Transistor Revolution MKII', kontakt, tags(
-        t.DRUMS, '808', '909', t.SAMPLED, t.KONTAKT,
+        t.DRUMS, '808', '909', t.SAMPLED, t.KONTAKT, t.SOLD,
     )),
 
     # -Wavesfactory-
     product('Wavesfactory', 'Little Harmonium', kontakt, tags(
         'melodica', t.ACOUSTIC, t.KONTAKT,
     )),
+    product('Wavesfactory', 'Newmello 1', kontakt, tags(
+        t.ACOUSTIC, t.KONTAKT, 'tape',
+    )),
     product('Wavesfactory', 'Suspended Cymbals', kontakt, tags(
         t.DRUMS, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Wavesfactory', 'Tea Towl Drums 2.0', kontakt, tags(
+        t.DRUMS, t.ACOUSTIC, t.KONTAKT,
+    )),
+    product('Wavesfactory', 'VQ Drums', kontakt, tags(
         t.DRUMS, t.ACOUSTIC, t.KONTAKT,
     )),
     product('Wavesfactory', 'W-Buzz', kontakt, tags(

@@ -3,7 +3,12 @@ from __future__ import absolute_import
 from functools import partial
 from collections import namedtuple
 
+
 AU_TYPES = {'aufx', 'aumf', 'aumu'}
+AU_CHOICES = {
+    'aufx', 'aumf', 'aumu',
+    'kontakt', 'reaktor', 'logic', 'live', 'UVI',
+}
 
 AUid = namedtuple('AUid', ('type', 'manufacturer', 'subtype'))
 aufx = partial(AUid, 'aufx')

@@ -11,7 +11,9 @@ from optparse import OptionParser, make_option as Option
 from . import __version__
 from .aupreset import aupreset
 from .db import FX, INST, fx_by_tag, inst_by_tag, effects
+from .db.brands import product_and_brand
 from .exceptions import UnknownCommand
+from .tags import t
 from .types import AU_TYPES
 from .utils import hp, header
 
@@ -122,9 +124,13 @@ class mroulette(object):
 
     def gen_presets(self, dest, tags, live=False, logic=False):
         self.mkdir_f(dest)
-        for tag, products in tags.iteritems():
-            for product in products:
-                self.save_preset_for_product(dest, product, tag)
+        [
+            self.save_preset_for_product(dest, product, tag)
+            for product in products if self.is_wanted(product)
+        ]
+
+    def is_wanted(self, product, unwanted={t.DISABLED, t.SOLD}):
+        return not set(product.tags) & unwanted
 
     def save_preset_for_product(self, dest, product, tag, suffix='aupreset'):
         tagdir = os.path.join(dest, tag)
@@ -137,7 +143,7 @@ class mroulette(object):
                 self.mkdir_f(tagdir)
                 self._tagdir_created.add(tagdir)
             filename = os.path.join(
-                tagdir, '.'.join([product.name, suffix]),
+                tagdir, '.'.join([product_and_brand(product), suffix]),
             )
             print('> preset for %s' % (self.quote(filename)), )
             with open(filename, 'w') as fh:
@@ -156,8 +162,9 @@ class mroulette(object):
                        ntags=1, live=False, logic=False):
         self.mkdir_f(dest)
         for product in collection:
-            for tag in product.tags[:ntags]:
-                self.save_preset_for_product(dest, product, tag)
+            if self.is_wanted(product):
+                for tag in product.tags[:ntags]:
+                    self.save_preset_for_product(dest, product, tag)
 
     def uniq_fx_by_tag(self, tag):
         seen = self._seen_fx

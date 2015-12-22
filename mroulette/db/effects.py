@@ -46,21 +46,21 @@ FX = {
     )),
 
     # -Airwindows-
-    # product('Airwindows', 'Pressure 3', aufx('Dthr', 'prs3'), tags(
-    #    t.DYN, t.FREE, t.COMP,
-    # )),
-    # product('Airwindows', 'Channel 4', aufx('Dthr', 'cha4'), tags(
-    #    t.DIST, t.CHARACTER, t.FREE, t.ANALOG,
-    # )),
-    # product('Airwindows', 'DeRez', aufx('Dthr', 'derz'), tags(
-    #    t.DIST, t.CHARACTER, 'bitcrusher', t.FREE,
-    # )),
-    # product('Airwindows', 'DustBunny', aufx('Dthr', 'dbny'), tags(
-    #    t.DIST, t.CHARACTER, 'vinyl', t.FREE,
-    # )),
-    # product('Airwindows', 'TapeFat', aufx('Dthr', 'tayp'), tags(
-    #    t.DIST, t.CHARACTER, t.FILT, 'tape', t.FREE,
-    # )),
+    product('Airwindows', 'Pressure 3', aufx('Dthr', 'prs3'), tags(
+       t.DYN, t.FREE, t.COMP, t.DISABLED,
+    )),
+    product('Airwindows', 'Channel 4', aufx('Dthr', 'cha4'), tags(
+       t.DIST, t.CHARACTER, t.FREE, t.ANALOG, t.DISABLED,
+    )),
+    product('Airwindows', 'DeRez', aufx('Dthr', 'derz'), tags(
+       t.DIST, t.CHARACTER, 'bitcrusher', t.FREE, t.DISABLED,
+    )),
+    product('Airwindows', 'DustBunny', aufx('Dthr', 'dbny'), tags(
+       t.DIST, t.CHARACTER, 'vinyl', t.FREE, t.DISABLED,
+    )),
+    product('Airwindows', 'TapeFat', aufx('Dthr', 'tayp'), tags(
+       t.DIST, t.CHARACTER, t.FILT, 'tape', t.FREE, t.DISABLED,
+    )),
 
     # -Amazing Noises-
     product('Amazing Noises', 'Compulsive Switcher', livefx, tags(
@@ -193,11 +193,14 @@ FX = {
     product('Audiothing', 'Frostbite', aufx('AdTg', 'FrsB'), tags(
         t.CREATIVE, t.VERB, t.CHARACTER, t.RINGMOD,
     )),
+    product('Audiothing', 'Valve Filter VF-1', aufx('AdTg', 'VlVf'), tags(
+        t.FILT, t.CHARACTER,
+    )),
 
     # -Boz Digital Labs-
-    #product('Boz Digital Labs', 'Bark of Dog', aufx('BDLa', 'BODg'), tags(
-    #    t.EQEX, t.EQ, t.BASS, 'voice of god', t.FREE,
-    #)),
+    product('Boz Digital Labs', 'Bark of Dog', aufx('BDLa', 'BODg'), tags(
+        t.EQEX, t.EQ, t.BASS, 'voice of god', t.FREE, t.DISABLED,
+    )),
 
     # -Brainworx-
     product('Brainworx', 'bx_saturator V2', aufx('Brwx', 'bxa2'), tags(
@@ -357,6 +360,15 @@ FX = {
     product('Flux', 'Epure', aufx('Fspd', 'Ftst'), tags(
         t.EQCL, t.EQ, t.MIX, t.MASTER,
     )),
+    product('Flux', 'IRCAM Trax v3', aufx('Fspd', 'ftrx'), tags(
+        t.CREATIVE,
+    )),
+    product('Flux', 'IRCAM TraxCsV v3', aufx('Fspd', 'ftrc'), tags(
+        t.CREATIVE,
+    )),
+    product('Flux', 'IRCAM TraxSvF v3', aufx('Fspd', 'ftrs'), tags(
+        t.CREATIVE,
+    )),
     product('Flux', 'Pure Compressor', aufx('Fspd', 'fxPc'), tags(
         t.FLUX, t.DYN, t.COMP, t.MIX, t.SC,
     )),
@@ -383,11 +395,14 @@ FX = {
         t.FLUX, t.DYN, t.MIX, t.MASTER, 'bus',
         'track', t.COMP, t.SPECIAL,
     )),
+    product('Flux', 'IRCAM Verb v3', aufx('Fspd', 'fitv'), tags(
+        t.VERB, t.SPECIAL, t.CREATIVE,
+    )),
 
     # -Focusrite-
-    #product('Focusrite', 'RED 2 EQ', aufx('FCUS', 'rd2E'), tags(
-    #    t.EQCL, t.EQ,
-    #)),
+    product('Focusrite', 'RED 2 EQ', aufx('FCUS', 'rd2E'), tags(
+        t.EQCL, t.EQ, t.DISABLED,
+    )),
     product('Focusrite', 'RED 3 Compressor', aufx('FCUS', 'rd3C'), tags(
         t.COMP, t.CHARACTER, t.DYN, 'VCA',
     )),
@@ -424,11 +439,17 @@ FX = {
     product('Goodhertz', 'Lossy', aufx('GDHZ', 'LSSY'), tags(
         t.LOFI, t.SPECIAL, t.CHARACTER,
     )),
+    product('Goodhertz', 'Midside', aufx('GDHZ', 'MDSD'), tags(
+        t.IMAGE, t.MS, t.SPECIAL, t.EQ,
+    )),
     product('Goodhertz', 'Panpot', aufx('GDHZ', 'PNPT'), tags(
         t.IMAGE,
     )),
     product('Goodhertz', 'Trem Control', aufx('GDHZ', 'TRM1'), tags(
         t.MOD, t.CHARACTER, t.SAT, t.TREMOLO,
+    )),
+    product('Goodhertz', 'Tiltshift', aufx('GDHZ', 'TLTS'), tags(
+        t.EQCL,
     )),
     product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VCM1'), tags(
         t.COMP, t.DYN, t.CHARACTER, 'vinyl',
@@ -523,27 +544,63 @@ FX = {
     product('iZotope', 'Insight', aufx('iZtp', 'ZnIS'), tags(
         t.METER,
     )),
-    product('iZotope', 'Ozone 6 Advanced', aufx('iZtp', 'ZnO6'), tags(
+
+    product('iZotope', 'Ozone 7 Advanced', aufx('iZtp', 'ZnO7'), tags(
         t.STRIP, t.MASTER, t.COMP, t.DYN, t.LIMIT, t.EQ,
         'dyneq', 'matching', t.EQEX, t.IMAGE,
     )),
-    product('iZotope', 'Ozone 6 Dynamic EQ', aufx('iZtp', 'ZnY6'), tags(
+    product('iZotope', 'Ozone 7 Dynamic EQ', aufx('iZtp', 'ZnY7'), tags(
         t.EQCL, t.EQ, 'dyneq', t.DYN, t.EQ,
     )),
-    product('iZotope', 'Ozone 6 Dynamics', aufx('iZtp', 'ZnD6'), tags(
-        t.DYN, t.DYN, t.COMP,
+    product('iZotope', 'Ozone 7 Dynamics', aufx('iZtp', 'ZnD7'), tags(
+        t.DYN, t.COMP,
     )),
-    product('iZotope', 'Ozone 6 Equalizer', aufx('iZtp', 'ZnE6'), tags(
+    product('iZotope', 'Ozone 7 Equalizer', aufx('iZtp', 'ZnE7'), tags(
         t.EQCL, t.EQ,
     )),
-    product('iZotope', 'Ozone 6 Exciter', aufx('iZtp', 'ZO6X'), tags(
+    product('iZotope', 'Ozone 7 Exciter', aufx('iZtp', 'ZO7X'), tags(
         t.EQEX, t.EQ,
     )),
-    product('iZotope', 'Ozone 6 Imager', aufx('iZtp', 'ZnI6'), tags(
+    product('iZotope', 'Ozone 7 Imager', aufx('iZtp', 'ZnI7'), tags(
         t.IMAGE,
     )),
-    product('iZotope', 'Ozone 6 Maximizer', aufx('iZtp', 'ZO6M'), tags(
+    product('iZotope', 'Ozone 7 Maximizer', aufx('iZtp', 'ZO7M'), tags(
         t.LIMIT,
+    )),
+    product('iZotope', 'Ozone 7 Vintage Comp', aufx('iZtp', 'ZO7C'), tags(
+        t.COMP, t.CHARACTER,
+    )),
+    product('iZotope', 'Ozone 7 Vintage EQ', aufx('iZtp', 'ZO7Q'), tags(
+        t.EQCR, t.EQ,
+    )),
+    product('iZotope', 'Ozone 7 Vintage Limiter', aufx('iZtp', 'ZO7V'), tags(
+        t.LIMIT, t.CHARACTER,
+    )),
+    product('iZotope', 'Ozone 7 Vintage Tape', aufx('iZtp', 'ZO7T'), tags(
+        t.LOFI, t.CHARACTER, t.SAT,
+    )),
+
+    product('iZotope', 'Ozone 6 Advanced', aufx('iZtp', 'ZnO6'), tags(
+        t.STRIP, t.MASTER, t.COMP, t.DYN, t.LIMIT, t.EQ,
+        'dyneq', 'matching', t.EQEX, t.IMAGE, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Dynamic EQ', aufx('iZtp', 'ZnY6'), tags(
+        t.EQCL, t.EQ, 'dyneq', t.DYN, t.EQ, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Dynamics', aufx('iZtp', 'ZnD6'), tags(
+        t.DYN, t.COMP, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Equalizer', aufx('iZtp', 'ZnE6'), tags(
+        t.EQCL, t.EQ, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Exciter', aufx('iZtp', 'ZO6X'), tags(
+        t.EQEX, t.EQ, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Imager', aufx('iZtp', 'ZnI6'), tags(
+        t.IMAGE, t.DISABLED,
+    )),
+    product('iZotope', 'Ozone 6 Maximizer', aufx('iZtp', 'ZO6M'), tags(
+        t.LIMIT, t.DISABLED,
     )),
 
     product('iZotope', 'Nectar 2', aumf('iZtp', 'ZnN2'), tags(
@@ -555,9 +612,9 @@ FX = {
     product('iZotope', 'Nectar 2 Pitch Editor', aufx('iZtp', 'ZnMP'), tags(
         t.PITCH, t.VOCAL, 'autotune',
     )),
-    #product('iZotope', 'Nectar Elements', aufx('iZtp', 'ZnNE'), tags(
-    #    t.STRIP, t.VOCAL,
-    #)),
+    product('iZotope', 'Nectar Elements', aufx('iZtp', 'ZnNE'), tags(
+       t.STRIP, t.VOCAL, t.DISABLED,
+    )),
 
     product('iZotope', 'RX 5 De-click', aufx('iZtp', 'Zn5K'), tags(
         t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
@@ -580,23 +637,24 @@ FX = {
         t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
     )),
 
-    #product('iZotope', 'RX 4 Declicker', aufx('iZtp', 'Zn4K'), tags(
-    #    t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
-    #)),
-    #product('iZotope', 'RX 4 Declipper', aufx('iZtp', 'Zn4P'), tags(
-    #)),
-    #product('iZotope', 'RX 4 Decrackler', aufx('iZtp', 'Zn4C'), tags(
-    #    t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
-    #)),
-    #product('iZotope', 'RX 4 Denoiser', aufx('iZtp', 'Zn4N'), tags(
-    #    t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
-    #)),
-    #product('iZotope', 'RX 4 Dialogue Denoiser', aufx('iZtp', 'Zn4D'), tags(
-    #    t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
-    #)),
-    #product('iZotope', 'RX 4 Hum Removal', aufx('iZtp', 'Zn4H'), tags(
-    #    t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE,
-    #)),
+    product('iZotope', 'RX 4 Declicker', aufx('iZtp', 'Zn4K'), tags(
+        t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
+    product('iZotope', 'RX 4 Declipper', aufx('iZtp', 'Zn4P'), tags(
+       t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
+    product('iZotope', 'RX 4 Decrackler', aufx('iZtp', 'Zn4C'), tags(
+        t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
+    product('iZotope', 'RX 4 Denoiser', aufx('iZtp', 'Zn4N'), tags(
+        t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
+    product('iZotope', 'RX 4 Dialogue Denoiser', aufx('iZtp', 'Zn4D'), tags(
+        t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
+    product('iZotope', 'RX 4 Hum Removal', aufx('iZtp', 'Zn4H'), tags(
+        t.OTHER, t.SPECIAL, t.CREATIVE, t.RESTORE, t.DISABLED,
+    )),
 
     product('iZotope', 'Trash 2', aufx('iZtp', 'ZnT2'), tags(
         t.LOFI, t.SAT, t.SPECIAL, t.CREATIVE, t.CHARACTER,
@@ -628,16 +686,19 @@ FX = {
     )),
 
     # -Klevgränd Produktion-
-    product('Klevgrand Produktion', 'R0Verb', aufx('Klev', 'rvrb'), tags(
+    product('Klevgrand', 'Kuvert', aufx('Klev', 'kvrt'), tags(
+        t.FSU,
+    )),
+    product('Klevgrand', 'R0Verb', aufx('Klev', 'rvrb'), tags(
         t.VERB, t.SPECIAL,
     )),
-    product('Klevgrand Produktion', 'SquashIt', aufx('Klev', 'Sqit'), tags(
+    product('Klevgrand', 'SquashIt', aufx('Klev', 'Sqit'), tags(
         t.DIST, t.CHARACTER, t.MULTIBAND,
     )),
-    product('Klevgrand Produktion', 'Svep', aufx('Klev', 'modl'), tags(
+    product('Klevgrand', 'Svep', aufx('Klev', 'modl'), tags(
         t.MOD, t.PHASER, t.FLANG, t.CHORUS, t.FREE,
     )),
-    product('Klevgrand Produktion', 'Vandelay', aufx('Klev', 'dely'), tags(
+    product('Klevgrand', 'Vandelay', aufx('Klev', 'dely'), tags(
         t.DELAY, t.MULTIBAND, t.FREE,
     )),
 
@@ -659,46 +720,46 @@ FX = {
     )),
 
     # -Lexicon-
-    product('Lexicon', 'LexChamber PCM', aufx('Lexi', 'Lcm1'), tags(
+    product('Lexicon', 'Chamber PCM', aufx('Lexi', 'Lcm1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexChorus', aufx('Lexi', 'Lcr1'), tags(
+    product('Lexicon', 'Chorus', aufx('Lexi', 'Lcr1'), tags(
         t.MOD, t.CHORUS, t.DELAY,
     )),
-    product('Lexicon', 'LexConcert Hall PCM', aufx('Lexi', 'Lch1'), tags(
+    product('Lexicon', 'Concert Hall PCM', aufx('Lexi', 'Lch1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexDualDelay', aufx('Lexi', 'Ldd1'), tags(
+    product('Lexicon', 'DualDelay', aufx('Lexi', 'Ldd1'), tags(
         t.DELAY,
     )),
-    product('Lexicon', 'LexHall PCM', aufx('Lexi', 'Lhl1'), tags(
+    product('Lexicon', 'Hall PCM', aufx('Lexi', 'Lhl1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexMultivoiceShift', aufx('Lexi', 'Lmp1'), tags(
+    product('Lexicon', 'MultivoiceShift', aufx('Lexi', 'Lmp1'), tags(
         t.PITCH, t.SPECIAL, t.DELAY,
     )),
-    product('Lexicon', 'LexPitchshift', aufx('Lexi', 'Lsp1'), tags(
+    product('Lexicon', 'Pitchshift', aufx('Lexi', 'Lsp1'), tags(
         t.PITCH, t.SPECIAL,
     )),
-    product('Lexicon', 'LexPlate PCM', aufx('Lexi', 'Lpl1'), tags(
+    product('Lexicon', 'Plate PCM', aufx('Lexi', 'Lpl1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexRandomDelay', aufx('Lexi', 'Lrd1'), tags(
+    product('Lexicon', 'RandomDelay', aufx('Lexi', 'Lrd1'), tags(
         t.DELAY, t.SPECIAL,
     )),
-    product('Lexicon', 'LexRandomHall PCM', aufx('Lexi', 'Lrh1'), tags(
+    product('Lexicon', 'RandomHall PCM', aufx('Lexi', 'Lrh1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexResonantChords', aufx('Lexi', 'Lrc1'), tags(
+    product('Lexicon', 'ResonantChords', aufx('Lexi', 'Lrc1'), tags(
         t.CREATIVE, t.DELAY, t.PITCH, t.SPECIAL,
     )),
-    product('Lexicon', 'LexRoom PCM', aufx('Lexi', 'Lrm1'), tags(
+    product('Lexicon', 'Room PCM', aufx('Lexi', 'Lrm1'), tags(
         t.VERB,
     )),
-    product('Lexicon', 'LexStringBox', aufx('Lexi', 'Sbx1'), tags(
+    product('Lexicon', 'StringBox', aufx('Lexi', 'Sbx1'), tags(
         t.CREATIVE, t.VERB, t.PITCH, t.SPECIAL,
     )),
-    product('Lexicon', 'LexVintagePlate PCM', aufx('Lexi', 'Lpl0'), tags(
+    product('Lexicon', 'VintagePlate PCM', aufx('Lexi', 'Lpl0'), tags(
         t.VERB,
     )),
 
@@ -748,6 +809,10 @@ FX = {
 
     # -MeldaProduction-
     product(
+        'MeldaProduction', 'MMultibandBitFun', aumf('Meld', 'MbBF'),
+        tags(t.LOFI, t.SPECIAL, t.SC, t.MULTIBAND),
+    ),
+    product(
         'MeldaProduction', 'MMultibandGranular', aumf('Meld', 'MMGr'),
         tags(t.GRAIN, t.SPECIAL, t.SC, t.MULTIBAND),
     ),
@@ -757,63 +822,66 @@ FX = {
     ),
 
     # -Metric Halo-
-    product('Metric Halo', 'MH Channel Strip', aufx('BJJk', 'Chns'), tags(
+    product('Metric Halo', 'Channel Strip', aufx('BJJk', 'Chns'), tags(
         t.STRIP, t.DYN, t.EQ,
     )),
-    product('Metric Halo', 'MH Character', aufx('MHL ', 'CHAR'), tags(
+    product('Metric Halo', 'Character', aufx('MHL ', 'CHAR'), tags(
         t.SAT, t.CHARACTER,
     )),
     product('Metric Halo', 'Dirty Delay', aufx('MHL ', 'DELY'), tags(
         t.DELAY,
+    )),
+    product('Metric Halo', 'Thump', aufx('MHL ', 'THMP'), tags(
+        t.EQEX, t.FREE,
     )),
 
     # -Native Instruments-
     product('Native Instruments', 'Driver', aufx('-NI-', 'Ni$='), tags(
         t.DIST, t.CHARACTER, t.SC,
     )),
-    #product('Native Instruments', 'Enhanced EQ', aufx('-NI-', 'Ni$:'), tags(
-    #    t.EQCL, t.EQ, t.CHARACTER,
-    #)),
+    product('Native Instruments', 'Enhanced EQ', aufx('-NI-', 'Ni$:'), tags(
+        t.EQCL, t.EQ, t.CHARACTER, t.DISABLED,
+    )),
     product('Native Instruments', 'Guitar Rig 5', aumf('-NI-', 'NiG5'), tags(
         t.AMP, t.GUITAR, t.STRIP, t.SC,
     )),
     product('Native Instruments', 'Molekular', reaktorFX, tags(
         t.CREATIVE, t.SPECIAL, t.DELAY, t.VOCODER, t.PITCH, t.SC,
     )),
-    #product('Native Instruments', 'Passive EQ', aufx('-NI-', 'Ni$9'), tags(
-    #    t.EQCL, t.EQ, t.CHARACTER,
-    #)),
+    product('Native Instruments', 'Passive EQ', aufx('-NI-', 'Ni$9'), tags(
+        t.EQCL, t.EQ, t.CHARACTER, t.DISABLED,
+    )),
     product('Native Instruments', 'Reaktor 6 FX', reaktorFX, tags(
         t.STRIP, 'modular', t.SC,
     )),
-    #product('Native Instruments', 'RC 24', aufx('-NI-', 'Ni$>'), tags(
-    #    t.VERB, t.CHARACTER,
-    #)),
-    #product('Native Instruments', 'RC 48', aufx('-NI-', 'Ni$?'), tags(
-    #    t.VERB, t.CHARACTER,
-    #)),
+    product('Native Instruments', 'RC 24', aufx('-NI-', 'Ni$>'), tags(
+        t.VERB, t.CHARACTER, t.DISABLED,
+    )),
+    product('Native Instruments', 'RC 48', aufx('-NI-', 'Ni$?'), tags(
+        t.VERB, t.CHARACTER, t.DISABLED,
+    )),
     product('Native Instruments', 'The Mouth', reaktorFX, tags(
         t.FSU, t.SPECIAL,
     )),
-    #product('Native Instruments', 'Solid Bus Comp', aufx('-NI-', 'Ni$6'), tags(
-    #    t.COMP, t.DYN,
-    #)),
-    #product('Native Instruments', 'Solid Dynamics', aufx('-NI-', 'Ni$7'), tags(
-    #    t.DYN,
-    #)),
-    #product('Native Instruments', 'Solid EQ', aufx('-NI-', 'Ni$8'), tags(
-    #    t.EQCL, t.EQ,
-    #)),
+    product('Native Instruments', 'Solid Bus Comp', aufx('-NI-', 'Ni$6'), tags(
+        t.COMP, t.DYN, t.DISABLED,
+    )),
+    product('Native Instruments', 'Solid Dynamics', aufx('-NI-', 'Ni$7'), tags(
+        t.DYN, t.DISABLED,
+    )),
+    product('Native Instruments', 'Solid EQ', aufx('-NI-', 'Ni$8'), tags(
+        t.EQCL, t.EQ, t.DISABLED,
+    )),
     product(
         'Native Instruments', 'Supercharger GT',
         aufx('-NI-', 'Ni$A'),
         tags(t.COMP, t.CHARACTER,
              t.DIST, t.DYN, t.SC),
     ),
-    #product(
-    #    'Native Instruments', 'Transient Master',
-    #    aufx('-NI-', 'Ni$5'), tags(t.TRANS, t.DYN)
-    #),
+    product(
+        'Native Instruments', 'Transient Master',
+        aufx('-NI-', 'Ni$5'), tags(t.TRANS, t.DYN, t.DISABLED)
+    ),
     product('Native Instruments', 'Replika', aufx('-NI-', 'Ni$B'), tags(
         t.DELAY, t.VERB,
     )),
@@ -869,12 +937,12 @@ FX = {
     )),
 
     # -Sinevibes-
-    #product('Sinevibes', 'Atom', aufx('SNSH', 'atom'), tags(
-    #    t.FILT, t.FREE,
-    #)),
-    #product('Sinevibes', 'Zap', aufx('SNSH', 'zzap'), tags(
-    #    t.MOD, t.FREE,
-    #)),
+    product('Sinevibes', 'Atom', aufx('SNSH', 'atom'), tags(
+        t.FILT, t.FREE, t.DISABLED,
+    )),
+    product('Sinevibes', 'Zap', aufx('SNSH', 'zzap'), tags(
+        t.MOD, t.FREE, t.DISABLED,
+    )),
 
     # -Sknote-
     product('Sknote', 'Disto', aufx('SKno', 4477780), tags(
@@ -882,33 +950,33 @@ FX = {
     )),
 
     # -Slate Digital-
-    #product('Slate Digital', 'FG-116 (VMR)', aufx('SlDg', 'VMXR'), tags(
-    #    t.COMP, t.DYN, t.CHARACTER, 'FET', '1176',
-    #)),
-    #product('Slate Digital', 'FG-401 (VMR)', aufx('SlDg', 'VMXR'), tags(
-    #    t.COMP, t.DYN, t.CHARACTER, 'SSL 4000', 'bus',
-    #)),
-    #product('Slate Digital', 'FG-N (VMR)', aufx('SlDg', 'VMXR'), tags(
-    #    t.EQCR, t.EQ, t.CHARACTER,
-    #)),
-    #product('Slate Digital', 'FG-S (VMR)', aufx('SlDg', 'VMXR'), tags(
-    #    t.EQCR, t.EQ, t.CHARACTER,
-    #)),
-    #product('Slate Digital', 'Revival (VMR)', aufx('SlDg', 'VMXR'), tags(
-    #    t.EQEX, t.EQ, t.CHARACTER, t.FREE,
-    #)),
-    #product('Slate Digital', 'FG-Grey (VBC)', aufx('SlDg', 'VBCg'), tags(
-    #    t.COMP, t.DYN, t.MIX, 'SSL 4000',
-    #)),
-    #product('Slate Digital', 'FG-MU (VBC)', aufx('SlDg', 'VBCm'), tags(
-    #    t.COMP, t.DYN, t.MIX, 'vari-mu',
-    #)),
-    #product('Slate Digital', 'FG-Red (VBC)', aufx('SlDg', 'VBCr'), tags(
-    #    t.COMP, t.DYN, t.MIX, 'VCA',
-    #)),
-    #product('Slate Digital', 'Virtual Mix Rack', aufx('SlDg', 'VMXR'), tags(
-    #    t.STRIP,
-    #)),
+    product('Slate Digital', 'FG-116 (VMR)', aufx('SlDg', 'VMXR'), tags(
+        t.COMP, t.DYN, t.CHARACTER, 'FET', '1176', t.SOLD,
+    )),
+    product('Slate Digital', 'FG-401 (VMR)', aufx('SlDg', 'VMXR'), tags(
+        t.COMP, t.DYN, t.CHARACTER, 'SSL 4000', 'bus', t.SOLD,
+    )),
+    product('Slate Digital', 'FG-N (VMR)', aufx('SlDg', 'VMXR'), tags(
+        t.EQCR, t.EQ, t.CHARACTER, t.SOLD,
+    )),
+    product('Slate Digital', 'FG-S (VMR)', aufx('SlDg', 'VMXR'), tags(
+        t.EQCR, t.EQ, t.CHARACTER, t.SOLD,
+    )),
+    product('Slate Digital', 'Revival (VMR)', aufx('SlDg', 'VMXR'), tags(
+        t.EQEX, t.EQ, t.CHARACTER, t.FREE, t.SOLD,
+    )),
+    product('Slate Digital', 'FG-Grey (VBC)', aufx('SlDg', 'VBCg'), tags(
+        t.COMP, t.DYN, t.MIX, 'SSL 4000', t.DISABLED,
+    )),
+    product('Slate Digital', 'FG-MU (VBC)', aufx('SlDg', 'VBCm'), tags(
+        t.COMP, t.DYN, t.MIX, 'vari-mu', t.DISABLED,
+    )),
+    product('Slate Digital', 'FG-Red (VBC)', aufx('SlDg', 'VBCr'), tags(
+        t.COMP, t.DYN, t.MIX, 'VCA', t.DISABLED,
+    )),
+    product('Slate Digital', 'Virtual Mix Rack', aufx('SlDg', 'VMXR'), tags(
+        t.STRIP, t.SOLD,
+    )),
     product(
         'Slate Digital', 'Virtual Tape Machines',
         aufx('SlDg', 'VTMs'),
@@ -928,30 +996,30 @@ FX = {
 
 
     # -Smartelectronix-
-    #product('Smartelectronix', 'Ambience', aufx('MagJ', '07C0BCD2'), tags(
-    #    t.VERB, t.FREE,
-    #)),
-    #product('Smartelectronix', 'Bouncy', aufx('BrDJ', 'BNCY'), tags(
-    #    t.DELAY, t.SPECIAL, t.FREE, 'zipper-noise',
-    #)),
+    product('Smartelectronix', 'Ambience', aufx('MagJ', '07C0BCD2'), tags(
+        t.VERB, t.FREE, t.DISABLED,
+    )),
+    product('Smartelectronix', 'Bouncy', aufx('BrDJ', 'BNCY'), tags(
+        t.DELAY, t.SPECIAL, t.FREE, 'zipper-noise', t.DISABLED,
+    )),
     product('Smartelectronix', 'Buffer Override', aumf('DFX!', 'buff'), tags(
         t.CREATIVE, t.SPECIAL, t.FREE, t.FSU,
     )),
-    #product('Smartelectronix', 'Geometer', aumf('DFX!', 'DFgr'), tags(
-    #    t.CREATIVE, t.SPECIAL, t.CHARACTER, t.FREE, t.WAVESHAPE,
-    #)),
-    #product('Smartelectronix', 'Monomaker', aufx('DFX!', 'mono'), tags(
-    #    t.IMAGE, t.CHARACTER, t.FREE, 'zipper-noise',
-    #)),
+    product('Smartelectronix', 'Geometer', aumf('DFX!', 'DFgr'), tags(
+        t.CREATIVE, t.SPECIAL, t.CHARACTER, t.FREE, t.WAVESHAPE, t.DISABLED,
+    )),
+    product('Smartelectronix', 'Monomaker', aufx('DFX!', 'mono'), tags(
+        t.IMAGE, t.CHARACTER, t.FREE, 'zipper-noise', t.DISABLED,
+    )),
     product('Smartelectronix', 'Polarizer', aufx('DFX!', 'pola'), tags(
         t.LOFI, t.DIST, t.CHARACTER, t.BITCRUSH, t.FREE,
     )),
-    #product('Smartelectronix', 'Scrubby', aumf('DFX!', 'scub'), tags(
-    #    t.CREATIVE, t.SPECIAL, t.FREE, t.PITCH,
-    #)),
-    #product('Smartelectronix', 'Skidder', aumf('DFX!', 'skid'), tags(
-    #    t.MOD, t.TREMOLO, t.SPECIAL, t.FREE,
-    #)),
+    product('Smartelectronix', 'Scrubby', aumf('DFX!', 'scub'), tags(
+        t.CREATIVE, t.SPECIAL, t.FREE, t.PITCH, t.DISABLED,
+    )),
+    product('Smartelectronix', 'Skidder', aumf('DFX!', 'skid'), tags(
+        t.MOD, t.TREMOLO, t.SPECIAL, t.FREE, t.DISABLED,
+    )),
     product('Smartelectronix', 'Transverb', aumf('DFX!', 'DFtv'), tags(
         t.CREATIVE, t.DELAY, t.SPECIAL, t.PITCH, t.FREE,
     )),
@@ -969,9 +1037,9 @@ FX = {
     product('Softube', 'Acoustic Feedback', aufx('SfTb', 'FbAU'), tags(
         t.AMP, t.GUITAR, t.SPECIAL,
     )),
-    #product('Softube', 'Active Equalizer', aufx('SfTb', 'AcEQ'), tags(
-    #    t.EQ, t.CHARACTER,
-    #)),
+    product('Softube', 'Active Equalizer', aufx('SfTb', 'AcEQ'), tags(
+        t.EQ, t.CHARACTER, t.DISABLED,
+    )),
     product('Softube', 'Bass Amp Room', aufx('SfTb', 'BARn'), tags(
         t.AMP, t.DIST, t.CHARACTER,
     )),
@@ -991,12 +1059,12 @@ FX = {
     product('Softube', 'Mutronics Mutator', aufx('SfTb', 'z9x7'), tags(
         t.FILT, t.CHARACTER, t.SC,
     )),
-    #product('Softube', 'Passive Equalizer', aufx('SfTb', 'PvEQ'), tags(
-    #    t.CHARACTER, t.EQ,
-    #)),
-    #product('Softube', 'Saturation Knob', aufx('SfTb', 'satn'), tags(
-    #    t.SAT, t.CHARACTER,
-    #)),
+    product('Softube', 'Passive Equalizer', aufx('SfTb', 'PvEQ'), tags(
+        t.CHARACTER, t.EQ, t.DISABLED,
+    )),
+    product('Softube', 'Saturation Knob', aufx('SfTb', 'satn'), tags(
+        t.SAT, t.CHARACTER, t.DISABLED,
+    )),
     product('Softube', 'Spring Reverb', aufx('SfTb', 'SpRn'), tags(
         t.VERB, 'spring',
     )),
@@ -1024,9 +1092,9 @@ FX = {
     product('Softube', 'TSAR-1', aufx('SfTb', 'tsar'), tags(
         t.VERB,
     )),
-    #product('Softube', 'TSAR-1R', aufx('SfTb', 'ts1r'), tags(
-    #    t.VERB,
-    #)),
+    product('Softube', 'TSAR-1R', aufx('SfTb', 'ts1r'), tags(
+        t.VERB, t.DISABLED,
+    )),
     product('Softube', 'Tube Delay', aufx('SfTb', 'TbDe'), tags(
         t.DELAY, t.CHARACTER, t.SAT,
     )),
@@ -1051,15 +1119,15 @@ FX = {
     product('Softube', 'Vintage Amp Room', aufx('SfTb', 'ViAU'), tags(
         t.AMP, t.DIST, t.CHARACTER,
     )),
-    #product('Softube', 'White Amp', aufx('SfTb', 'WAmp'), tags(
-    #    t.AMP, t.DIST, t.CHARACTER,
-    #)),
+    product('Softube', 'White Amp', aufx('SfTb', 'WAmp'), tags(
+        t.AMP, t.DIST, t.CHARACTER, t.DISABLED,
+    )),
 
     # -Solid State Logic-
-    product('Solid State Logic', 'SSL X-Saturator', aufx('SSL ', 'XSAT'), tags(
+    product('Solid State Logic', 'X-Saturator', aufx('SSL ', 'XSAT'), tags(
         t.SAT, t.ANALOG, t.CHARACTER,
     )),
-    product('Solid State Logic', 'SSL X-Verb', aufx('_SSL', 'XVRB'), tags(
+    product('Solid State Logic', 'X-Verb', aufx('_SSL', 'XVRB'), tags(
         t.VERB,
     )),
 
@@ -1096,27 +1164,27 @@ FX = {
     product('Soundhack', '++chebyshev', aufx('SDHK', '+2ch'), tags(
         t.CREATIVE, t.DIST, t.SPECIAL,
     )),
-    #product('Soundhack', '++compand', aufx('SDHK', '+2cm'), tags(
-    #    t.DYN, t.DYN, t.FREE,
-    #)),
+    product('Soundhack', '++compand', aufx('SDHK', '+2cm'), tags(
+        t.DYN, t.DYN, t.FREE, t.DISABLED,
+    )),
     product('Soundhack', '++decimate', aufx('SDHK', '+210'), tags(
         t.LOFI, t.CHARACTER, t.BITCRUSH, t.FREE,
     )),
-    #product('Soundhack', '+delay', aumf('SDHK', '+dla'), tags(
-    #    t.DELAY, t.FREE,
-    #)),
-    #product('Soundhack', '+matrix', aufx('SDHK', '+mtx'), tags(
-    #    t.SPECIAL, t.FREE,
-    #)),
+    product('Soundhack', '+delay', aumf('SDHK', '+dla'), tags(
+        t.DELAY, t.FREE, t.DISABLED,
+    )),
+    product('Soundhack', '+matrix', aufx('SDHK', '+mtx'), tags(
+        t.SPECIAL, t.FREE, t.DISABLED,
+    )),
     product('Soundhack', '++morphfilter', aufx('SDHK', '+mrf'), tags(
         t.SPECTRAL, t.FILT, t.SPECIAL,
     )),
     product('Soundhack', '+phasemash (pvoc)', aumf('SDHK', '+pvx'), tags(
         t.CREATIVE, t.SPECIAL,
     )),
-    #product('Soundhack', '++phasor', aumf('SDHK', '+2pz'), tags(
-    #    t.MOD, t.SPECIAL, t.PHASER, t.FREE,
-    #)),
+    product('Soundhack', '++phasor', aumf('SDHK', '+2pz'), tags(
+        t.MOD, t.SPECIAL, t.PHASER, t.FREE, t.DISABLED,
+    )),
     product('Soundhack', '+pitchdelay', aumf('SDHK', '+pdl'), tags(
         t.DELAY, t.PITCH, t.SPECIAL,
     )),
@@ -1193,9 +1261,9 @@ FX = {
     )),
 
     # -SPL-
-    #product('SPL', 'DeVerb', aufx('SPL1', 'SPDV'), tags(
-    #    t.TRANS, t.DYN,
-    #)),
+    product('SPL', 'DeVerb', aufx('SPL1', 'SPDV'), tags(
+        t.TRANS, t.DYN, t.DISABLED,
+    )),
 
     # -Sugar Bytes-
     product('Sugar Bytes', 'Turnado', aumf('Sbar', 'sbtu'), tags(
@@ -1208,8 +1276,11 @@ FX = {
     )),
 
     # -Tokyo Dawn Labs-
-    product('Tokyo Dawn Labs', 'TDR Kotelnikov GE', aufx('Tdrl', 'Td97'), tags(
+    product('Tokyo Dawn Labs', 'Kotelnikov GE', aufx('Tdrl', 'Td97'), tags(
         t.COMP, t.DYN, t.SC,
+    )),
+    product('Tokyo Dawn Labs', 'Nova', aufx('Tdrl', 'Td5a'), tags(
+        t.EQCL, t.EQ, t.DYN, 'dyneq',
     )),
 
     # -Tritik-
@@ -1252,6 +1323,9 @@ FX = {
     )),
 
     # -Valhalla-
+    product('Valhalla', 'Plate', aufx('oDin', 'plat'), tags(
+        t.VERB, 'plate',
+    )),
     #product('Valhalla', 'Shimmer', aufx('oDin', 'shmr'), tags(
     #    t.VERB, t.SPECIAL, t.PITCH,
     #)),
