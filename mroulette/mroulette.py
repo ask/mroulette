@@ -66,6 +66,8 @@ class mroulette(object):
             'genfx': self.genfx,
             'genfavinst': self.genfavinst,
             'genfavfx': self.genfavfx,
+            'genfavmixfx': self.genfavmixfx,
+            'genfavcreative': self.genfavcreative,
         }
 
     def random(self, logic=False, live=False):
@@ -111,6 +113,20 @@ class mroulette(object):
     def genfavinst(self, dest, ntags=1, live=False, logic=False):
         self.gen_brandpresets(dest, INST, live, logic)
 
+    def genfavmixfx(self, dest, ntags=1, live=False, logic=False):
+        self.gen_favpresets(dest, FX, ntags, live, logic,
+                            filter=self._is_mix_tagged)
+
+    def genfavcreative(self, dest, ntags=1, live=False, logic=False):
+        self.gen_favpresets(dest, FX, ntags, live, logic,
+                            filter=self._not_mix_tagged)
+
+    def _is_mix_tagged(self, product):
+        return t.MIX in product.tags
+
+    def _not_mix_tagged(self, product):
+        return t.MIX not in product.tags
+
     def mkdir_f(self, path):
         print('* creating dir %s' % (self.quote(path), ))
         try:
@@ -124,10 +140,9 @@ class mroulette(object):
 
     def gen_presets(self, dest, tags, live=False, logic=False):
         self.mkdir_f(dest)
-        [
-            self.save_preset_for_product(dest, product, tag)
-            for product in products if self.is_wanted(product)
-        ]
+        for tag, products in tags.iteritems():
+            [self.save_preset_for_product(dest, product, tag)
+             for product in products if self.is_wanted(product)]
 
     def is_wanted(self, product, unwanted={t.DISABLED, t.SOLD}):
         return not set(product.tags) & unwanted
@@ -156,13 +171,14 @@ class mroulette(object):
                          live=False, logic=False):
         self.mkdir_f(dest)
         for product in collection:
-            self.save_preset_for_product(dest, product, product.brand)
+            if self.is_wanted(product):
+                self.save_preset_for_product(dest, product, product.brand)
 
     def gen_favpresets(self, dest, collection,
-                       ntags=1, live=False, logic=False):
+                       ntags=1, live=False, logic=False, filter=None):
         self.mkdir_f(dest)
         for product in collection:
-            if self.is_wanted(product):
+            if self.is_wanted(product) and (not filter or filter(product)):
                 for tag in product.tags[:ntags]:
                     self.save_preset_for_product(dest, product, tag)
 

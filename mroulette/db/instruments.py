@@ -15,7 +15,7 @@ INST = {
     )),
 
     # -AAS-
-    product('AAS', 'Chromaphone', aumu('AAS ', 'Chr1'), tags(
+    product('AAS', 'Chromaphone 2', aumu('AAS ', 'TBBV'), tags(
         t.SYNTH, t.PHYSMOD, t.MALLET, t.STRINGS, t.BELL,
     )),
 
@@ -463,6 +463,9 @@ INST = {
     product('Modwheel', 'Hum Drum', kontakt, tags(
         t.KONTAKT, t.DRUMS, t.ACOUSTIC, t.PERC,
     )),
+    product('Modwheel', 'The Bends', kontakt, tags(
+        t.PERC, t.ACOUSTIC, t.KONTAKT,
+    )),
     product('Modwheel', 'The Lowdown', kontakt, tags(
         t.BASS, t.STRINGS, t.BOWED, t.ACOUSTIC, t.KONTAKT, t.DOUBLEBASS,
         t.PLUCKED, t.BOWED,
@@ -636,7 +639,7 @@ INST = {
     )),
     product('Native Instruments', 'Session Horns Pro', kontakt, tags(
         t.BRASS, t.ENSEMBLE,  t.TROMBONE, t.TENOR, t.SAX, t.TRUMPET,
-        t.ACOUSTIC, t.KONTAKT,
+        t.ACOUSTIC, t.KONTAKT, t.WOODWINDS,
     )),
     product('Native Instruments', 'Session Strings Pro', kontakt, tags(
         t.STRINGS, 'ensemble', t.ACOUSTIC, t.KONTAKT, t.BOWED,
@@ -798,6 +801,9 @@ INST = {
     product('Soniccouture', 'Bag of Tricks', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.KALIMBA, t.DRUMS, t.PERC, t.MALLET,
     )),
+    product('Soniccouture', 'Broken Wurli', kontakt, tags(
+        t.KONTAKT, t.ACOUSTIC, t.KEYS, t.ELECTRIC, t.TINES,
+    )),
     product('Soniccouture', 'EP73 Deconstructed', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.KEYS, t.ELECTRIC, t.TINES,
     )),
@@ -834,6 +840,9 @@ INST = {
     product('Soniccouture', 'Pan Drums', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.PERC, t.MALLET,
     )),
+    product('Soniccouture', 'The Attic', kontakt, tags(
+        t.KONTAKT, t.SYNTH, t.ANALOG, t.SAMPLED, t.SPECIAL,
+    )),
     product('Soniccouture', 'The Conservatoire Collection', kontakt, tags(
         t.KONTAKT, t.HARPSICHORD, t.ACOUSTIC, t.PERC, t.PLUCKED,
     )),
@@ -842,6 +851,9 @@ INST = {
     )),
     product('Soniccouture', 'Vibraphone', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.VIBRAPHONE, t.PERC, t.TUNED, t.MALLET,
+    )),
+    product('Soniccouture', 'Xtended Piano', kontakt, tags(
+        t.KONTAKT, t.PIANO, t.ACOUSTIC, t.SPECIAL,
     )),
 
     # -Sonokinetic-
@@ -919,6 +931,11 @@ INST = {
         t.DRUMS, t.PERC, t.FX, t.ACOUSTIC, t.SPECIAL,
     )),
 
+    # -SPC Plugins-
+    product('SPC Plugins', 'ArcSyn', aumu('SPCP', 'SPCa'), tags(
+        t.SYNTH, t.WAVETABLE, t.DIGITAL,t.SPECIAL,
+    )),
+
     # -Spitfire Audio-
     product('Spitfire Audio', 'Artisan Cello', kontakt, tags(
         t.STRINGS, t.CELLO, t.SOLO, t.ACOUSTIC, t.KONTAKT, t.BOWED,
@@ -931,6 +948,9 @@ INST = {
     )),
     product('Spitfire Audio', 'EVO Grid 2: Strings', kontakt, tags(
         t.STRINGS, t.KONTAKT, t.ACOUSTIC,
+    )),
+    product('Spitfire Audio', 'EVO Grid 4: Woodwinds', kontakt, tags(
+        t.BRASS, t.WOODWINDS, t.KONTAKT, t.ACOUSTIC,
     )),
     product('Spitfire Audio', 'Olafur Arnalds Evolutions', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.VIOLA, t.BASS,
@@ -950,8 +970,11 @@ INST = {
     product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.ENSEMBLE,
     )),
-    product('Spitfire Audio', 'Sacconi Quartet Vol1', kontakt, tags(
+    product('Spitfire Audio', 'Sacconi Quartet Vol1 - Violin 1', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
+    )),
+    product('Spitfire Audio', 'Sacconi Quartet Vol2 - Cello', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CELLO,
     )),
     product('Spitfire Audio', 'Swarm Harp', kontakt, tags(
         t.HARP, t.SOLO, t.ACOUSTIC, t.KONTAKT,

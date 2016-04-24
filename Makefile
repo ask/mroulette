@@ -1,6 +1,27 @@
 MR=mroulette
 
 
+cleans:
+	rm -rf Effects/*
+	rm -rf AMixing/*
+	rm -rf BCreative/*
+	rm -rf Instruments/*
+	rm -rf fxbytag/*
+	rm -rf insbytag/*
+
+
+AMixing:
+	$(MR) genfavmixfx $@
+
+AMixing_clean:
+	rm -rf AMixing/
+
+BCreative:
+	$(MR) genfavcreative $@
+
+BCreative_clean:
+	rm -rf BCreative/
+
 Effects:
 	$(MR) genfavfx $@
 
@@ -25,7 +46,10 @@ insbytag:
 insbytag_clean:
 	-rm -rf insbytag/
 
-clean: Effects_clean fxbytag_clean Instruments_clean insbytag_clean
+fxclean: AMixing_clean BCreative_clean Effects_clean fxbytag_clean
+instclean: Instruments_clean insbytag_clean
 
-all: clean Effects fxbytag Instruments insbytag
+distclean: fxclean instclean
+
+all: cleans AMixing BCreative Effects fxbytag Instruments insbytag
 

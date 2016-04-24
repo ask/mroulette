@@ -47,8 +47,10 @@ class t(object):
     SPECTRAL = 'Spectral'
     SURROUND = 'Surround'
     STRIP = 'Strip'
+    TAPE = 'Tape'
     TRANS = 'Transient Shaper'
     TREMOLO = 'Tremolo'
+    UTIL = 'Utility'
     VERB = 'Reverb'
     VIB = 'Vibrato'
     VOCODER = 'Vocoder'
@@ -124,6 +126,7 @@ class t(object):
     VOCAL = 'Vocal'
     VOCODER = 'Vocoder'
     WAVETABLE = 'Wavetable'
+    WOODWINDS = 'Woodwinds'
     ZITHER = 'Zither'
 
     ABLETON = 'Ableton'
