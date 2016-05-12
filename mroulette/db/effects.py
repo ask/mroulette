@@ -360,6 +360,9 @@ FX = {
         t.FLUX, t.DYN, t.SPECIAL, t.MULTIBAND, t.COMP,
         t.MIX, t.MASTER, t.MIX,
     )),
+    product('Flux', 'Bittersweet Pro', aufx('Fspd', 'fxBS'), tags(
+        t.TRANS, t.DYN, t.MULTIBAND, t.MIX,
+    )),
     product('Flux', 'Elixir', aufx('Fspd', 'Flxr'), tags(
         t.FLUX, t.DYN, t.LIMIT, t.MIX, t.MASTER, t.MIX,
     )),
@@ -747,6 +750,12 @@ FX = {
     )),
     product('Kush Audio', 'Electra DSP', aufx('Kush', 'Elec'), tags(
         t.EQCR, t.EQ, t.CHARACTER, t.ANALOG, t.MIX,
+    )),
+    product('Kush Audio', 'Omega A', aufx('Kush', 'OmeA'), tags(
+        t.SAT, t.CHARACTER,
+    )),
+    product('Kush Audio', 'Omega N', aufx('Kush', 'OmeN'), tags(
+        t.SAT, t.CHARACTER,
     )),
     product('Kush Audio', 'Pusher', aufx('Kush', 'Push'), tags(
         t.DIST, t.CHARACTER, t.SAT,
