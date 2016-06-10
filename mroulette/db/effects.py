@@ -445,39 +445,78 @@ FX = {
     )),
 
     # -Goodhertz-
-    product('Goodhertz', 'CanOpener Studio', aufx('GDHZ', 'CNOS'), tags(
+    product('Goodhertz', 'CanOpener Studio', aufx('GDHZ', 'CS2X'), tags(
         t.IMAGE, t.MIX, t.UTIL, t.MASTER,
     )),
-    product('Goodhertz', 'Faraday Limiter', aufx('GDHZ', 'FDLM'), tags(
+    #product('Goodhertz', 'CanOpener Studio', aufx('GDHZ', 'CNOS'), tags(
+    #    t.IMAGE, t.MIX, t.UTIL, t.MASTER,
+    #)),
+    product('Goodhertz', 'Faraday Limiter', aufx('GDHZ', 'FL2X'), tags(
         t.LIMIT, t.DYN, t.CHARACTER, t.MIX,
     )),
-    product('Goodhertz', 'Good Dither', aufx('GDHZ', 'GDTH'), tags(
+    #product('Goodhertz', 'Faraday Limiter', aufx('GDHZ', 'FDLM'), tags(
+    #    t.LIMIT, t.DYN, t.CHARACTER, t.MIX,
+    #)),
+    product('Goodhertz', 'Good Dither', aufx('GDHZ', 'DT2X'), tags(
         t.RESTORE, t.MIX, t.UTIL,
     )),
-    product('Goodhertz', 'Lohi', aufx('GDHZ', 'LOHI'), tags(
+    #product('Goodhertz', 'Good Dither', aufx('GDHZ', 'GDTH'), tags(
+    #    t.RESTORE, t.MIX, t.UTIL,
+    #)),
+    product('Goodhertz', 'Lohi', aufx('GDHZ', 'LH2X'), tags(
         t.FILT, t.CHARACTER,
     )),
-    product('Goodhertz', 'Lossy', aufx('GDHZ', 'LSSY'), tags(
+    #product('Goodhertz', 'Lohi', aufx('GDHZ', 'LOHI'), tags(
+    #    t.FILT, t.CHARACTER,
+    #)),
+    product('Goodhertz', 'Lossy', aufx('GDHZ', 'LS2X'), tags(
         t.LOFI, t.SPECIAL, t.CHARACTER,
     )),
-    product('Goodhertz', 'Midside', aufx('GDHZ', 'MDSD'), tags(
+    #product('Goodhertz', 'Lossy', aufx('GDHZ', 'LSSY'), tags(
+    #    t.LOFI, t.SPECIAL, t.CHARACTER,
+    #)),
+    product('Goodhertz', 'Midside', aufx('GDHZ', 'MS2X'), tags(
         t.IMAGE, t.MS, t.SPECIAL, t.EQ, t.MIX,
     )),
-    product('Goodhertz', 'Panpot', aufx('GDHZ', 'PNPT'), tags(
+    product('Goodhertz', 'Midside Matrix', aufx('GDHZ', 'MM2X'), tags(
+        t.IMAGE, t.MS, t.SPECIAL, t.EQ, t.MIX,
+    )),
+    #product('Goodhertz', 'Midside', aufx('GDHZ', 'MDSD'), tags(
+    #    t.IMAGE, t.MS, t.SPECIAL, t.EQ, t.MIX,
+    #)),
+    product('Goodhertz', 'Panpot', aufx('GDHZ', 'PP2X'), tags(
         t.IMAGE, t.MIX,
     )),
-    product('Goodhertz', 'Tone Control', aufx('GDHZ', 'TNC1'), tags(
-        t.EQCR, t.CHARACTER, t.SAT, t.MIX, t.MASTER,
-    )),
-    product('Goodhertz', 'Trem Control', aufx('GDHZ', 'TRM1'), tags(
-        t.MOD, t.CHARACTER, t.SAT, t.TREMOLO,
-    )),
-    product('Goodhertz', 'Tiltshift', aufx('GDHZ', 'TLTS'), tags(
+    #product('Goodhertz', 'Panpot', aufx('GDHZ', 'PNPT'), tags(
+    #    t.IMAGE, t.MIX,
+    #)),
+    product('Goodhertz', 'Tiltshift', aufx('GDHZ', 'TS2X'), tags(
         t.EQCL, t.MIX,
     )),
-    product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VCM1'), tags(
+    #product('Goodhertz', 'Tiltshift', aufx('GDHZ', 'TLTS'), tags(
+    #   t.EQCL, t.MIX,
+    #)),
+    product('Goodhertz', 'Tone Control', aufx('GDHZ', 'TC2X'), tags(
+        t.EQCR, t.CHARACTER, t.SAT, t.MIX, t.MASTER,
+    )),
+    #product('Goodhertz', 'Tone Control', aufx('GDHZ', 'TNC1'), tags(
+    #    t.EQCR, t.CHARACTER, t.SAT, t.MIX, t.MASTER,
+    #)),
+    product('Goodhertz', 'Trem Control', aufx('GDHZ', 'TR2X'), tags(
+        t.MOD, t.CHARACTER, t.SAT, t.TREMOLO,
+    )),
+    #product('Goodhertz', 'Trem Control', aufx('GDHZ', 'TRM1'), tags(
+    #    t.MOD, t.CHARACTER, t.SAT, t.TREMOLO,
+    #)),
+    product('Goodhertz', 'Trim', aufx('GDHZ', 'TM2X'), tags(
+        t.UTIL, t.MIX,
+    )),
+    product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VC2X'), tags(
         t.COMP, t.DYN, t.CHARACTER, 'vinyl', t.MIX,
     )),
+    #product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VCM1'), tags(
+    #    t.COMP, t.DYN, t.CHARACTER, 'vinyl', t.MIX,
+    #)),
 
     # -Illformed-
     product('Illformed', 'Glitch2', aumu('DBlu', 'igl2'), tags(
