@@ -242,6 +242,9 @@ FX = {
     product('D16', 'Syntorus', aufx('d16g', 'Sn7R'), tags(
         t.MOD, t.CHORUS, t.PHASER,
     )),
+    product('D16', 'Toraverb', aufx('d16g', 'T4V8'), tags(
+        t.VERB, t.MOD,
+    )),
 
     # -Dimitry Sches-
     product('Dimitry Sches', 'Tantra', aufx('DSCH', 'TntR'), tags(
