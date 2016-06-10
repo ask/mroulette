@@ -1,6 +1,18 @@
 Musical roulette
 ================
 
+Installation
+------------
+
+To install use::
+
+    $ sudo python setup.py develop
+
+or use a virtualenv (Python-persons will know what to do)
+
+Usage
+-----
+
 Stupid personal project that maintains a database over instruments,
 effects and sample libraries and enables you to:
 
