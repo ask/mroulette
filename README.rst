@@ -79,3 +79,25 @@ I started working on a web view (in ``mrview``) late one Saturday, but never
 finished it.
 
 
+Contributing
+------------
+
+Database of effects is in ``mroulette/db/effects.py``, instruments is in
+``mroulette/db/instruments.py``.
+
+If you want to add a new audio unit, you need to find the AU id for that
+plugin, e.g::
+
+    product('Cytomic', 'The Drop', aumf('Cyto', 'Drp1'), tags(
+        t.FILT, t.SPECIAL, 'mfx', t.CHARACTER, t.SC,
+    )),
+
+Here the autype is ``aumf``, the publisher is ``Cyto`` and the product is ``Drp1``.
+
+The easiest way I have found to get this is by opening Logic Pro ->
+Preferences -> Plugin Manager, select the plugin you want and rescan the
+effect.  A window will open, scroll it to the top once the scan completes to
+find the AU id (note the order is reversed here, it's type, product, publisher).
+
+Possibly there's an easier way to do this using the auval command, but that
+shit is a mystery.  Possibly the most unintuitive command ever.
