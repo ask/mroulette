@@ -583,6 +583,9 @@ FX = {
     product('Inear Display', 'BowEcho', aumf('inrD', 'inBo'), tags(
         t.FSU, t.DELAY, t.SPECIAL, t.CREATIVE, t.FREE,
     )),
+    product('Inear Display', 'Cruelle', aumf('inrD', 'inCr'), tags(
+        t.DIST, t.SPECIAL, t.CREATIVE,
+    )),
     product('Inear Display', 'Danaides', aumf('inrD', 'inDa'), tags(
         t.FSU, t.SPECIAL, t.CREATIVE, t.FREE,
     )),
