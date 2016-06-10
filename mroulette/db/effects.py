@@ -1020,6 +1020,9 @@ FX = {
     product('PSP', '2445', aufx('PSPa', 'PP25'), tags(
         t.VERB, t.SPECIAL, t.LOFI,
     )),
+    product('PSP', '608 MultiDelay', aumf('PSPa', 'P608'), tags(
+        t.DELAY, t.VERB, 'spring',
+    )),
     product('PSP', 'B-Scanner', aumf('PSPa', 'PBSc'), tags(
         t.MOD, t.SPECIAL,
     )),
