@@ -970,11 +970,17 @@ INST = {
     product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.ENSEMBLE,
     )),
+    product('Spitfire Audio', 'Sacconi Quartet Vol2 - Cello', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CELLO,
+    )),
+    product('Spitfire Audio', 'Sacconi Quartet Vol1 - Viola 1', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLA,
+    )),
     product('Spitfire Audio', 'Sacconi Quartet Vol1 - Violin 1', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
     )),
-    product('Spitfire Audio', 'Sacconi Quartet Vol2 - Cello', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CELLO,
+    product('Spitfire Audio', 'Sacconi Quartet Vol1 - Violin 2', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
     )),
     product('Spitfire Audio', 'Swarm Harp', kontakt, tags(
         t.HARP, t.SOLO, t.ACOUSTIC, t.KONTAKT,
