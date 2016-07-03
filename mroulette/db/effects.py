@@ -589,6 +589,9 @@ FX = {
     product('Inear Display', 'Danaides', aumf('inrD', 'inDa'), tags(
         t.FSU, t.SPECIAL, t.CREATIVE, t.FREE,
     )),
+    product('Inear Display', 'Incipit', aumf('inrD', 'inIc'), tags(
+        t.DELAY, t.SPECIAL, t.CREATIVE, t.FREE,
+    )),
     product('Inear Display', 'R_Mem', aumf('InRm', 'RMid'), tags(
         t.GRAIN, t.SPECIAL, t.CREATIVE, t.FREE,
     )),
