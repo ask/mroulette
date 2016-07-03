@@ -1463,6 +1463,9 @@ FX = {
     product('Valhalla', 'Plate', aufx('oDin', 'plat'), tags(
         t.VERB, 'plate',
     )),
+    product('Valhalla', 'Space Modulator', aufx('oDin', 'SpMd'), tags(
+        t.MOD, t.CHORUS,
+    )),
     #product('Valhalla', 'Shimmer', aufx('oDin', 'shmr'), tags(
     #    t.VERB, t.SPECIAL, t.PITCH,
     #)),
