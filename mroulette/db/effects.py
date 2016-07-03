@@ -1161,6 +1161,9 @@ FX = {
     product('Softube', 'Bass Amp Room', aufx('SfTb', 'BARn'), tags(
         t.AMP, t.DIST, t.CHARACTER, t.MIX,
     )),
+    product('Softube', 'Bass Amp Room 8x10', aufx('SfTb', 'ba81'), tags(
+        t.AMP, t.DIST, t.CHARACTER, t.MIX,
+    )),
     product('Softube', 'Console 1', aufx('SfTb', 'ScPi'), tags(
         t.STRIP, 'ssl 4000', 'ssl 9000', t.CHARACTER, t.EQ, t.DYN, t.MIX,
     )),
