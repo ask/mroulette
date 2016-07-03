@@ -1250,6 +1250,9 @@ FX = {
     product('Softube', 'Vintage Amp Room', aufx('SfTb', 'ViAU'), tags(
         t.AMP, t.DIST, t.CHARACTER, t.MIX,
     )),
+    product('Softube', 'Vintage Amp Room Half-Stack', aufx('SfTb', 'vahs'), tags(
+        t.AMP, t.DIST, t.CHARACTER, t.MIX,
+    )),
     product('Softube', 'White Amp', aufx('SfTb', 'WAmp'), tags(
         t.AMP, t.DIST, t.CHARACTER, t.DISABLED, t.MIX,
     )),
