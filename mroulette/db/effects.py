@@ -1190,6 +1190,9 @@ FX = {
     product('Softube', 'Metal Amp Room', aufx('SfTb', 'Mtal'), tags(
         t.AMP, t.DIST, t.CHARACTER, t.MIX,
     )),
+    product('Softube', 'Modular FX', aumf('SfTb', 'o6au'), tags(
+        t.STRIP, t.MODULAR, t.CREATIVE,
+    )),
     product('Softube', 'Mutronics Mutator', aufx('SfTb', 'z9x7'), tags(
         t.FILT, t.CHARACTER, t.SC,
     )),

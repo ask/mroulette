@@ -785,6 +785,9 @@ INST = {
     product('Softube', 'Heartbeat', aumu('SfTb', 'r9z8'), tags(
         t.DRUMS, t.SYNTH, t.ANALOG,
     )),
+    product('Softube', 'Modular', aumu('SfTb', 'hs9z'), tags(
+        t.SYNTH, t.ANALOG, t.MODULAR,
+    )),
 
     # -Sonic Charge-
     product('Sonic Charge', 'Microtonic', aumu('NuEd', 'NuMT'), tags(
