@@ -880,6 +880,9 @@ INST = {
     product('SoundDUST', 'Flutter EP', kontakt, tags(
         t.KONTAKT, t.KEYS,
     )),
+    product('SoundDUST', 'Flutter EP Wavetable', kontakt, tags(
+        t.KONTAKT, t.KEYS, t.WAVETABLE,
+    )),
     product('SoundDUST', 'Ghost Dulcitone 1900', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.DULCITONE, t.KEYS, t.SPECIAL,
     )),
