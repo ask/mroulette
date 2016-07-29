@@ -907,6 +907,9 @@ INST = {
     product('SoundDUST', 'Plastic Ghost Piano', kontakt, tags(
         t.KONTAKT, t.SYNTH, t.SAMPLED, t.PIANO,
     )),
+    product('SoundDUST', 'Prepared Pianet', kontakt, tags(
+        t.KONTAKT, t.KEYS,
+    )),
     product('SoundDUST', 'Rubber Bass', kontakt, tags(
         t.KONTAKT, t.ACOUSTIC, t.BASS,
     )),
