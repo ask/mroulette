@@ -898,6 +898,9 @@ INST = {
     product('SoundDUST', 'idstrument suite', kontakt, tags(
         'div', t.KONTAKT, t.DRUMS, t.SYNTH, t.GUITAR,
     )),
+    product('SoundDUST', 'Modular Chaos Engine #4', kontakt, tags(
+        t.KONTAKT, t.DRUMS,
+    )),
     product('SoundDUST', 'Orgone', kontakt, tags(
         t.KONTAKT, t.SYNTH, t.SAMPLED,
     )),
