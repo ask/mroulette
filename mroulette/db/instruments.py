@@ -970,18 +970,37 @@ INST = {
     product('Spitfire Audio', 'Orstphone', kontakt, tags(
         'orstphone', t.IDIOPHONE, t.SOLO, t.ACOUSTIC, t.KONTAKT,
     )),
-    product('Spitfire Audio', 'Sable Chamber Strings Vol1', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO,
+    product('Spitfire Audio', 'Chamber Strings', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.VIOLA,
+        t.CONTRABASS, t.ENSEMBLE,
     )),
-    product('Spitfire Audio', 'Sable Chamber Strings Vol3', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
+    product('Spitfire Audio', 'Chamber Strings - Violin 1', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
     )),
-    product('Spitfire Audio', 'Sable Chamber Strings Vol4', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
+    product('Spitfire Audio', 'Chamber Strings - Violin 2', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN,
     )),
-    product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
-        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.ENSEMBLE,
+    product('Spitfire Audio', 'Chamber Strings - Viola', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLA,
     )),
+    product('Spitfire Audio', 'Chamber Strings - Bass', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CONTRABASS,
+    )),
+    product('Spitfire Audio', 'Chamber Strings - Cello', kontakt, tags(
+        t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CELLO,
+    )),
+    #product('Spitfire Audio', 'Sable Chamber Strings Vol1', kontakt, tags(
+    #    t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO,
+    #)),
+    #product('Spitfire Audio', 'Sable Chamber Strings Vol3', kontakt, tags(
+    #    t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
+    #)),
+    #product('Spitfire Audio', 'Sable Chamber Strings Vol4', kontakt, tags(
+    #    t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.BASS, t.VIOLA,
+    #)),
+    #product('Spitfire Audio', 'Sable Chamber Strings Ensembles', kontakt, tags(
+    #    t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.VIOLIN, t.CELLO, t.ENSEMBLE,
+    #)),
     product('Spitfire Audio', 'Sacconi Quartet Vol2 - Cello', kontakt, tags(
         t.STRINGS, t.ACOUSTIC, t.KONTAKT, t.CELLO,
     )),

@@ -70,6 +70,7 @@ class t(object):
     CHIMES = 'Chimes'
     CHIP = 'Chip'
     CINEMATIC = 'Cinematic'
+    CONTRABASS = 'Contrabass'
     DIGITAL = 'Digital'
     DOUBLEBASS = 'Double Bass'
     DRUMS = 'Drums'
