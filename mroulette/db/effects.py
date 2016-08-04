@@ -514,6 +514,9 @@ FX = {
     product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VC2X'), tags(
         t.COMP, t.DYN, t.CHARACTER, 'vinyl', t.MIX,
     )),
+    product('Goodhertz', 'Vulf Wow', aufx('GDHZ', 'VW2X'), tags(
+        t.SAT, t.DYN, t.CHARACTER, 'vinyl', t.MOD, t.CREATIVE,
+    )),
     #product('Goodhertz', 'Vulf Compressor', aufx('GDHZ', 'VCM1'), tags(
     #    t.COMP, t.DYN, t.CHARACTER, 'vinyl', t.MIX,
     #)),
