@@ -52,6 +52,12 @@ FX = {
     product('Airwindows', 'Channel 4', aufx('Dthr', 'cha4'), tags(
        t.DIST, t.CHARACTER, t.FREE, t.ANALOG, t.DISABLED, t.MIX,
     )),
+    product('Airwindows', 'Console 4 Buss', aufx('Dthr', 'coni'), tags(
+       t.STRIP, t.CHARACTER, t.MIX,
+    )),
+    product('Airwindows', 'Console 4 Channel', aufx('Dthr', 'conh'), tags(
+       t.STRIP, t.CHARACTER, t.MIX,
+    )),
     product('Airwindows', 'DeRez', aufx('Dthr', 'derz'), tags(
        t.DIST, t.CHARACTER, 'bitcrusher', t.FREE, t.DISABLED,
     )),
