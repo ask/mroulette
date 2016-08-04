@@ -1464,6 +1464,9 @@ FX = {
     product('Unfiltered Audio', 'G8 Gate', aumf('UnAu', 'Gate'), tags(
         t.DYN, t.SPECIAL, t.GATE, t.GRAIN, t.MIX,
     )),
+    product('Unfiltered Audio', 'Indent', aumf('UnAu', 'uaId'), tags(
+        t.DIST, t.CREATIVE,
+    )),
     product('Unfiltered Audio', 'Sandman', aufx('UnAu', 'snDM'), tags(
         t.DELAY, t.SPECIAL,
     )),
