@@ -64,6 +64,9 @@ FX = {
     product('Airwindows', 'DustBunny', aufx('Dthr', 'dbny'), tags(
        t.DIST, t.CHARACTER, 'vinyl', t.FREE, t.DISABLED,
     )),
+    product('Airwindows', 'Slew', aufx('Dthr', 'slew'), tags(
+       t.LOFI, t.CHARACTER, t.FILT, t.FREE, t.MIX,
+    )),
     product('Airwindows', 'TapeFat', aufx('Dthr', 'tayp'), tags(
        t.DIST, t.CHARACTER, t.FILT, t.TAPE, t.FREE, t.DISABLED, t.MIX,
     )),
