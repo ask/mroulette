@@ -599,7 +599,7 @@ FX = {
         t.FSU, t.SPECIAL, t.CREATIVE, t.FREE,
     )),
     product('Inear Display', 'Incipit', aumf('inrD', 'inIc'), tags(
-        t.DELAY, t.SPECIAL, t.CREATIVE, t.FREE,
+        t.DELAY, t.SPECIAL, t.CREATIVE,
     )),
     product('Inear Display', 'R_Mem', aumf('InRm', 'RMid'), tags(
         t.GRAIN, t.SPECIAL, t.CREATIVE, t.FREE,
