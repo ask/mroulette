@@ -1470,6 +1470,9 @@ FX = {
     )),
 
     # -Unfiltered Audio-
+    product('Unfiltered Audio', 'Dent', aumf('UnAu', 'uaDt'), tags(
+        t.DIST, t.CREATIVE, t.DELAY, t.LOFI,
+    )),
     product('Unfiltered Audio', 'Fault', aumf('UnAu', 'uaFa'), tags(
         t.CREATIVE, t.MOD, t.PITCH,
     )),
